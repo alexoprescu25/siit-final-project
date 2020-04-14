@@ -1,0 +1,57 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #EFEEF1;
+    margin: 5px;
+}
+
+.send-button {
+    background-color: #0059AD;
+    color: #D1FAFF;
+
+    border: none;
+    padding: 8px 20px;
+    border-radius: 50px;
+    width: 100px;
+    align-self: flex-end;
+}
+
+.contact-form input {
+    margin: 20px;
+}
+
+::placeholder {
+    color: rgb(168, 168, 168);
+}
+
+@media screen and (min-width: 700px) {
+    .contact-form div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .send-button {
+        align-self: center;
+    }
+
+    .send-button:hover {
+        opacity: 80%;
+        transition-duration: 0.6s;
+    }
+
+    input:focus {
+        border-bottom: 2px solid rgb(0, 0, 119);
+        border-radius: 0%;
+    }
+}

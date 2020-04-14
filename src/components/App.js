@@ -7,6 +7,9 @@ import Register from './auth/Register';
 import Business from './sections/Business';
 import AuthContext from './auth/AuthContext';
 import Profile from './sections/Profile';
+import Contact from './sections/Contact';
+import Home from './sections/Home';
+import RightDetails from './shared/RightDetails';
 
 function App() {
 
@@ -25,6 +28,10 @@ function App() {
         <BrowserRouter>
 
             <Header />
+            <RightDetails />
+            <Route exact path="/home">
+                <Home />
+            </Route>
             <Route exact path="/login">
                 <Login />
             </Route>
@@ -33,6 +40,9 @@ function App() {
             </Route>
             <Route exact path="/business">
                 <Business />
+            </Route>
+            <Route exact path="/contact">
+                <Contact />
             </Route>
             <Route exact path="/profile">
                 <Profile />

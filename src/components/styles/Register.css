@@ -3,6 +3,11 @@
     justify-content: center;
 }
 
+.formular input {
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+}
+
 .form-cls {
     display: flex;
     flex-direction: column;
@@ -10,14 +15,14 @@
 
 .form-cls input {
     width: 200px;
-    height: 40px;
+    height: 30px;
     margin: 4px;
 }
 
 .submit-button {
     padding: 8px 20px;
     border: none;
-    background-color: rgb(0, 38, 255);
+    background-color: #007BFF;
     color: white;
     border-radius: 4px;
     width: 100px;
@@ -26,22 +31,44 @@
 }
 
 .invalid-feedback {
-    color: red;
+    color: #822424;
+    font-family: arial;
+    font-size: 12px;
+    font-style: oblique;
 }
 
 .global-error {
-    background-color: rgb(255, 142, 142);
-    color: rgb(182, 0, 0);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #F8D7DA;
+    color: #751C24;
 }
 
 .global-success {
-    background-color: rgb(118, 255, 118);
-    color: green;
+    padding: 10px;
+    margin: 10px;
+    background-color: #D4EDDA;
+    color: #1A5724;
+    border-radius: 4px;
+    text-align: center;
+
 }
 
 @media screen and (min-width: 700px)  {
     .submit-button:hover {
         opacity: 80%;
         transition-duration: 0.6s;
+    }
+
+    .invalid-feedback {
+        font-size: 14px;
+    }
+
+    .form-cls input {
+        width: 300px;
+        height: 40px;
+        margin: 4px;
     }
 }

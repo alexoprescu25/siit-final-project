@@ -1,0 +1,10 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input:not(.form-checkbox) {
+    width: 200px;
+    height: 30px;
+    margin: 4px;
+}

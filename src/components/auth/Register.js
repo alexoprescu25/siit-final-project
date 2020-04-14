@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import '../styles/Register.css';
+import  '../styles/Register.css';
 import axios from 'axios';
 import qs from 'qs';
 import AuthContext from './AuthContext';
@@ -55,6 +55,7 @@ function Register() {
                 setToken(formData.username);
                 localStorage.setItem('token', formData.username);
                 setSuccessMessage('Your username was created!');
+                console.log(res);
             } catch(e) {
                 console.log(e);
                 setErrorMessage('Your username was not created!');

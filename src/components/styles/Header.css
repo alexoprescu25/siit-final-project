@@ -57,4 +57,9 @@
     .bottom-links a:hover {
         border-bottom: 4px solid white;
     }
+
+    .list-btn:hover {
+        color: white;
+        transition-duration: 0.6s;
+    }
 }

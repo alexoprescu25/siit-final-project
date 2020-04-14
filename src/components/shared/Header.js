@@ -52,6 +52,7 @@ function Header() {
                 <Link to="/business">Business</Link>
                 <Link to="/">Science</Link>
                 <Link to="/">Tech</Link>
+                <Link to="/contact">Contact</Link>
                 {
                     token ? 
                     <Link to="/profile">Profile</Link>
