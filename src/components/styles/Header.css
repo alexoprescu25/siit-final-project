@@ -48,3 +48,13 @@
 .home:enabled {
     border-bottom: 2px solid white;
 }
+
+@media screen and (min-width: 700px) {
+    .bottom-links a {
+        padding: 14px;
+    }
+
+    .bottom-links a:hover {
+        border-bottom: 4px solid white;
+    }
+}

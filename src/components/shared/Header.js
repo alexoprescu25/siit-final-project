@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 
 import '../styles/Header.css';
+import AuthContext from '../auth/AuthContext';
 
 function Header() {
+
+    function handleLogOut(e) {
+        e.preventDefault();
+
+        localStorage.removeItem('token');
+        setToken(null);
+    }
 
     function displayAuth() {
         const auth = document.querySelector('.auth');
@@ -13,6 +21,8 @@ function Header() {
             auth.classList.add('hidden');
         }
     }
+
+    const { token, setToken } = useContext(AuthContext);
 
     return (
         <>
@@ -26,8 +36,15 @@ function Header() {
                 </button>
             </div>
             <div className="auth hidden">
+            {
+                token ?
+                <Link onClick={ handleLogOut }>Log Out </Link>
+                :
+                <>
                 <Link to="/login">Login </Link>
                 <Link to="/register">Register</Link>
+                </>
+            }   
             </div>
             <div className="bottom-links">
                 <Link to="/home" className="home">Home</Link>
@@ -35,6 +52,11 @@ function Header() {
                 <Link to="/business">Business</Link>
                 <Link to="/">Science</Link>
                 <Link to="/">Tech</Link>
+                {
+                    token ? 
+                    <Link to="/profile">Profile</Link>
+                    : null
+                }
             </div>
         </nav>
         </>
