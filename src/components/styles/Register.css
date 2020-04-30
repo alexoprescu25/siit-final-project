@@ -42,18 +42,17 @@
     margin: 10px;
     border-radius: 4px;
     text-align: center;
-    background-color: #F8D7DA;
-    color: #751C24;
+    background-color: rgb(248, 215, 218);
+    color: rgb(143, 43, 45);
 }
 
 .global-success {
     padding: 10px;
     margin: 10px;
-    background-color: #D4EDDA;
-    color: #1A5724;
+    background-color: rgb(212, 237, 218);
+    color: rgb(54, 100, 46);
     border-radius: 4px;
     text-align: center;
-
 }
 
 @media screen and (min-width: 700px)  {

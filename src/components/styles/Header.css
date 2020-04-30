@@ -4,7 +4,7 @@
 }
 
 .site-navigation {
-    background-color: #BB1919;
+    background-color: rgb(187, 25, 25);
     font-size: 12px;
     font-weight: bold;
     padding: 15px;
@@ -23,7 +23,7 @@
 
 .site-navigation a {
     text-decoration: none;
-    color: #F6D0CF;
+    color: rgb(230, 208, 206);
     padding: 6px 10px;
 }
 
@@ -42,11 +42,42 @@
 .list-btn {
     background-color: transparent;
     border: none;
-    color: #F6D0CF;
+    color: rgb(230, 208, 206);
 }
 
 .home:enabled {
     border-bottom: 2px solid white;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(230, 208, 206);
+    width: 300px;
+}
+
+.search-bar svg {
+    color: rgb(230, 208, 206);
+}
+
+.search-input::placeholder {
+    color: rgb(230, 208, 206);
+    text-align: center;
+}
+
+.markets-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.exchange-rates {
+    display: flex;
+    align-items: center;
 }
 
 @media screen and (min-width: 700px) {

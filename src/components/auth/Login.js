@@ -1,5 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Login.css';
+import axios from 'axios';
+
+import AuthContext from './AuthContext';
 
 const errorMessage = {
     'username': 'You must enter the username!',
@@ -18,10 +22,34 @@ function Login() {
         'password': ''
     });
 
-    function handleSubmit(e) {
+    const { setToken } = useContext(AuthContext);
+
+    const [globalErrorMessage, setErrorMessage] = useState('');
+    const [globalSuccessMessage, setSuccessMessage] = useState('');
+
+    async function handleSubmit(e) {
         e.preventDefault();
 
-        validateFormData();
+        const isInvalid = validateFormData();
+        if(!isInvalid) {
+            try {
+                const res = await axios('http://localhost:3002/users');
+                const db = res.data;
+                for(let i in db) {
+                    if(db[i]['username'] === formData['username'] && db[i]['password'] === formData['password']) {
+                setSuccessMessage('Welcome back, ' + db[i]['firstname'] + '!');
+                setToken(db[i]['username']);
+                localStorage.setItem('token', db[i]['username']);
+                setTimeout(function() {
+                    window.history.back();
+                }, 1000);
+            }
+        }
+            } catch(e) {
+                console.log(e);
+                setErrorMessage('Your account does not exist!');
+            }
+        }
     }
 
     function handleInputChange(e) {
@@ -57,6 +85,21 @@ function Login() {
         <>
             <div className="formular">
                 <form className="login-form" onSubmit={ handleSubmit }>
+
+                    {
+                    globalErrorMessage ? 
+                    <div className="error-message">
+                        { globalErrorMessage }
+                    </div> : null
+                    }
+                    {
+                        globalSuccessMessage ? 
+                        <div className="success-message">
+                            { globalSuccessMessage }
+                        </div> : null
+                    }
+
+                    <h2>Sing In To Your Account</h2>
                     <input 
                         onChange={ handleInputChange }
                         value={formData.username}
@@ -68,7 +111,7 @@ function Login() {
                     />
                     <input 
                         onChange={ handleInputChange }
-                        value={formData.username}
+                        value={formData.password}
                         type="password"
                         id="password"
                         name="password"
@@ -82,7 +125,11 @@ function Login() {
                         name="checkbox"
                         className="form-checkbox"
                     />
-                    <label for="checkbox"> Remember me</label>
+                    <label htmlFor="checkbox"> Remember me</label>
+                    </div>
+                    <div className="create-account">
+                        <p>Not registered? </p>
+                        <Link to="/register">Create an Account</Link>
                     </div>
                     <button type="submit" className="submit-button">Log In</button>
                 </form>

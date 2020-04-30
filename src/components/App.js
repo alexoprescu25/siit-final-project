@@ -4,12 +4,14 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Header from './shared/Header';
 import Login from './auth/Login';
 import Register from './auth/Register';
-import Business from './sections/Business';
 import AuthContext from './auth/AuthContext';
-import Profile from './sections/Profile';
 import Contact from './sections/Contact';
-import Home from './sections/Home';
-import RightDetails from './shared/RightDetails';
+import NewsList from './news/NewsList';
+import NewsDetails from './news/NewsDetails';
+import EditNews from './news/EditNews';
+import FrontDetails from './shared/FrontDetails';
+import PrivateRoute from './auth/PrivateRoute';
+import AddNews from './news/AddNews';
 
 function App() {
 
@@ -27,10 +29,10 @@ function App() {
         <AuthContext.Provider value={ { token, setToken } }>
         <BrowserRouter>
 
+            <FrontDetails />
             <Header />
-            <RightDetails />
             <Route exact path="/home">
-                <Home />
+                <NewsList />
             </Route>
             <Route exact path="/login">
                 <Login />
@@ -39,16 +41,26 @@ function App() {
                 <Register />
             </Route>
             <Route exact path="/business">
-                <Business />
+                <NewsList category="business" />
             </Route>
+            <Route exact path="/science">
+                <NewsList category="science"/>
+            </Route>
+            <Route exact path="/businessnews/:newsId">
+                <NewsDetails />
+            </Route>
+            <PrivateRoute path="/businessnews/editnews/:newsId">
+                <EditNews />
+            </PrivateRoute>
+            <PrivateRoute exact path="/adding">
+                <AddNews />
+            </PrivateRoute>
             <Route exact path="/contact">
                 <Contact />
             </Route>
-            <Route exact path="/profile">
-                <Profile />
-            </Route>
 
         </BrowserRouter>
+
         </AuthContext.Provider>
         </>
     );

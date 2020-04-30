@@ -11,7 +11,8 @@ const errorMessages = {
     'email': 'You must enter your email!',
     'password': 'You must enter your password!',
     'retype-password': 'You must retype your password!',
-    'different-passwords': 'You must enter same password twice!'
+    'different-passwords': 'You must enter same password twice!',
+    'existing': ' already existing!'
 }
 
 function Register() {
@@ -32,19 +33,19 @@ function Register() {
         'email': '',
         'password': '',
         'retype-password': '',
-        'different-passwords': ''
+        'different-passwords': '',
+        'existing': ''
     });
 
     const [globalErrorMessage, setErrorMessage] = useState('');
     const [globalSuccessMessage, setSuccessMessage] = useState('');
-    const [isDirty, setDirty] = useState(false);
 
     const { setToken } = useContext(AuthContext);
 
     async function handleSubmit(e) {
         e.preventDefault();
 
-        const isInvalid = validateFormData();
+        const isInvalid = await validateFormData();
 
         if(!isInvalid) {
             try {
@@ -71,13 +72,13 @@ function Register() {
 
         const newError = {
             ...formError,
-            [e.currentTarget.id]: ''
+            [e.currentTarget.id]: '',
         }
 
         setFormError(newError);
     }
 
-    function validateFormData() {
+    async function validateFormData() {
         const inputs = ['firstname', 'lastname', 'username', 'email', 'password', 'retype-password'];
         const newError = {...formError};
         let isInvalid = false;
@@ -94,6 +95,21 @@ function Register() {
             isInvalid = true;
         }
 
+        try {
+            const res =  await axios('http://localhost:3002/users');
+            const db = res.data;
+            for(let i in db) {
+                for(const input of ['username', 'email']) {
+                    if(db[i][input] === formData[input]) {
+                        newError['existing'] = ( '*This ' + input + errorMessages['existing']);
+                        isInvalid = true;
+                    }
+                }
+            }
+        } catch(e) {
+                console.log(e);
+        }
+    
         setFormError(newError);
         return isInvalid;
     }
@@ -116,6 +132,9 @@ function Register() {
 
             <div className="formular">
             <form className="form-cls" onSubmit={ handleSubmit }>
+                <div className="invalid-feedback">
+                        { formError['existing'] }
+                </div>
             <input 
                     onChange={ handleInputChange }
                     value={ formData.firstname }

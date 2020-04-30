@@ -1,0 +1,33 @@
+.article {
+    width: 100%;
+    padding: 10px;
+}
+
+.article img {
+    width: 350px;
+    margin: 5px;
+}
+
+.article h3 {
+    color: 	rgb(0, 51, 102);
+    margin: 5px;
+}
+
+.description {
+    text-align: justify;
+    margin: 5px;
+}
+
+.time {
+    color: gray;
+}
+
+.article a {
+    text-decoration: none;
+    color: rgb(59, 153, 214);
+    justify-self: flex-end;
+}
+
+.article a:hover {
+    text-decoration: underline;
+}

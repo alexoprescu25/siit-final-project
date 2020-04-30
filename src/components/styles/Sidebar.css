@@ -1,0 +1,61 @@
+.covid-table {
+    margin-top: 10px;
+    border-top: 1px solid rgb(226, 226, 226);
+}
+
+.details-content {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.coronavirus {
+    padding: 10px;
+}
+
+.coronavirus h4 {
+    background-color: rgb(255, 21, 0);
+    color: 	rgb(255, 255, 255);
+    padding: 6px;
+}
+
+.coronavirus p {
+    margin: 4px;
+}
+
+.deaths {
+    background-color: rgb(161, 0, 0);
+    padding: 6px;
+    color: white;
+    border: 1px solid gray;
+}
+
+.recovered {
+    background-color: rgb(0, 161, 0);
+    padding: 6px;
+    color: white;
+    border: 1px solid gray;
+}
+
+.covid-table th {
+    padding: 10px;
+}
+
+.cases {
+    background-color: rgb(255, 255, 255);
+    color:	rgb(0, 1, 10);
+}
+
+.confirmed {
+    background-color: rgb(81, 5, 14);
+    color: rgb(255, 162, 5);
+}
+
+.number {
+    background-color: rgb(116, 0, 14);
+    color: rgb(255, 255, 255);
+}
+
+.deaths {
+    background-color: black;
+    color: rgb(202, 202, 202);
+}

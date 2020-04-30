@@ -1,0 +1,39 @@
+.page-content {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.page-style {
+    width: 200px;
+    height: 100%;
+    background-color: rgb(56, 56, 56);
+    position: absolute;
+}
+
+.hidden {
+    display: none;
+}
+
+.exit-button {
+    border: none;
+    background-color: transparent;
+    color: rgb(177, 177, 177);
+}
+
+.exit-path {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profile-path {
+    display: flex;
+    align-items: center;
+    color: rgb(230, 230, 230);
+    border-bottom: 1px solid rgb(230, 230, 230, 0.5);
+    padding: 5px;
+}
+
+.profile-path a {
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+}

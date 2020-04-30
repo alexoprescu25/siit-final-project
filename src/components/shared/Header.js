@@ -4,7 +4,11 @@ import { Link } from 'react-router-dom';
 import '../styles/Header.css';
 import AuthContext from '../auth/AuthContext';
 
-function Header() {
+function Header(z) {
+
+    function handleClick() {
+        document.querySelector('.page-content').classList.remove('hidden');
+    }
 
     function handleLogOut(e) {
         e.preventDefault();
@@ -29,35 +33,48 @@ function Header() {
         <nav className="site-navigation">
             <div className="top-links">
                 <h1 className="title">BreakingNews</h1>
-                <button onClick={ displayAuth } className="list-btn">
-                    <svg className="bi bi-list" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
+                <div className="search-bar">
+                    <input 
+                        type="text"
+                        className="search-input"
+                        placeholder="Search News"
+                    />
+                    <svg className="bi bi-search" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"/>
+                        <path d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"/>
                     </svg>
-                </button>
+                </div>
+                <div className="list-icons">
+                    <button onClick={ displayAuth } className="list-btn">
+                        <svg className="bi bi-list" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z" />
+                        </svg>
+                    </button>
+                    <button className="list-icons list-btn" onClick={ handleClick }>
+                        <svg className="bi bi-three-dots-vertical" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.5 13a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm0-5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm0-5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
             <div className="auth hidden">
             {
                 token ?
-                <Link onClick={ handleLogOut }>Log Out </Link>
+                <Link onClick={ handleLogOut } to="/">Log Out </Link>
                 :
                 <>
                 <Link to="/login">Login </Link>
                 <Link to="/register">Register</Link>
                 </>
-            }   
+            }    
             </div>
             <div className="bottom-links">
                 <Link to="/home" className="home">Home</Link>
-                <Link to="/">Coronavirus</Link>
+                <Link to="/coronavirus">Coronavirus</Link>
                 <Link to="/business">Business</Link>
-                <Link to="/">Science</Link>
-                <Link to="/">Tech</Link>
+                <Link to="/science">Science</Link>
+                <Link to="/tech">Tech</Link>
                 <Link to="/contact">Contact</Link>
-                {
-                    token ? 
-                    <Link to="/profile">Profile</Link>
-                    : null
-                }
             </div>
         </nav>
         </>

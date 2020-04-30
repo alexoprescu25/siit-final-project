@@ -1,10 +1,51 @@
+.formular {
+}
+
 .login-form {
     display: flex;
     flex-direction: column;
+
+    padding: 20px;
+
+    width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .login-form input:not(.form-checkbox) {
     width: 200px;
     height: 30px;
+    margin: 10px;
+}
+
+.create-account {
+    display: flex;
     margin: 4px;
+}
+
+.create-account a {
+    text-decoration: none;
+    color: blue;
+    margin-left: 2px;
+}
+
+.create-account a:hover {
+    text-decoration: underline;
+}
+
+.success-message {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(212, 237, 218);
+    color: rgb(54, 100, 46);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.error-message {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: rgb(248, 215, 218);
+    color: rgb(143, 43, 45);
 }

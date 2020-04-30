@@ -1,5 +1,237 @@
 {
   "users": [
-   
+    {
+      "firstname": "Alexandru",
+      "lastname": "Oprescu",
+      "username": "alexoprescu",
+      "email": "alexandru.oprescu@outlook.com",
+      "password": "asdes12",
+      "retype-password": "asdes12",
+      "id": 1
+    },
+    {
+      "firstname": "Alexandru",
+      "lastname": "Oprescu",
+      "username": "alexoprescu25",
+      "email": "alexandru.oprescu@outlook.com",
+      "password": "qwerty",
+      "retype-password": "qwerty",
+      "id": 2
+    }
+  ],
+  "news": [
+    {
+      "id": 2,
+      "author": "The Editorial Board",
+      "title": "The Central Bank That Ate Japan - The Wall Street Journal",
+      "description": "The Central Bank That Ate Japan  The Wall Street Journal\r\nBank of Japan ramps up stimulus as virus pain deepens  Reuters\r\nBOJ's Kuroda channels Draghi with 'whatever it takes' vow  Nikkei Asian Review\r\nTo Help Businesses Bor…",
+      "url": "https://www.wsj.com/articles/the-central-bank-that-ate-japan-11588026341",
+      "urlToImage": "https://images.wsj.net/im-180966/social",
+      "publishedAt": "2020-04-27T22:37:46Z",
+      "content": "This is a busy week in central banking with meetings at the Bank of Japan, the Federal Reserve and European Central Bank. Thank Tokyo for going first, and delivering a warning about the limits, and dangers, of firing monetary bazookas at the coronavirus crisi… ",
+      "category": "business"
+    },
+    {
+      "id": 3,
+      "author": "Igor Bonifacic",
+      "title": "Save up to $300 on 2018 iPad Pro models at B&H",
+      "description": "If you've been waiting to get a sizeable discount on the 2018 iPad Pro after Apple announced the new 2020 model last month, B&H may have what you're looking for. The retailer has discounted most of its 2018 iPad Pro stock by at least $100.A couple of the deal…",
+      "url": "https://www.engadget.com/apple-2018-ipad-pro-sale-bh-195836706.html",
+      "urlToImage": "https://o.aolcdn.com/images/dims?resize=1200%2C630&crop=1200%2C630%2C0%2C0&quality=80&image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2020-04%2F06367f20-88be-11ea-9f8f-62c19b999f93&client=amp-blogside-v2&signature=782ad527e17d4be03606bca29e780a04f0e37d7d",
+      "publishedAt": "2020-04-27T19:58:36Z",
+      "content": "Buy 11-inch iPad Pro at B&amp;H - $799\r\nBuy 12.9-inch iPad Pro at B&amp;H - $799\r\nShop B&amp;H iPad Pro sale\r\nEngadget's Chris Velazco gave the 2018 iPad Pro a score of 84 when it first came out. He particularly liked the updated Apple Pencil and the iPad Pro…"
+    },
+    {
+      "id": 4,
+      "author": null,
+      "title": "Why the Coronavirus Is a Threat to U.S.-China Relations",
+      "description": "The novel coronavirus has escalated tensions between the U.S. and China in ways that will likely linger after the virus is contained. WSJ’s Gerald F. Seib explains. Photo: Kevin Lamarque/Reuters",
+      "url": "https://www.wsj.com/video/why-the-coronavirus-is-a-threat-to-us-china-relations/D227A02A-59EC-4589-BB39-FC9C634AEA79.html",
+      "urlToImage": "http://m.wsj.net/video/20200427/042820seibuschinaupdate/042820seibuschinaupdate_1280x720.jpg",
+      "publishedAt": "2020-04-28T09:30:00Z",
+      "content": "Opinion: 'Martin, You Can Never, Ever Trust the Communists'\r\n4/27/2020Main Street: Decades after Hong Kong gave refuge to Martin Lee's father, a former Kuomintang general, his son, the founder of Hong Kong's pro-democracy movement, has just been arrested. Ima…"
+    },
+    {
+      "id": 5,
+      "author": null,
+      "category": "business",
+      "title": "The Forces Fueling 2020’s Oil Bust",
+      "description": "The coronavirus pandemic has emptied out cities around the world, causing a historic drop in oil demand just as production was reaching new highs. WSJ explains the oil price bust that could reshape energy markets. Photo Illustration: Carlos Waters/WSJ",
+      "url": "https://www.wsj.com/video/the-forces-fueling-2020s-oil-bust/FCD37725-3E7D-49F5-A8AD-DB16A4D8F5AB.html",
+      "urlToImage": "http://m.wsj.net/video/20200416/041620oilpricessplash/041620oilpricessplash_1280x720.jpg",
+      "publishedAt": "2020-04-16T10:00:00Z",
+      "content": "WSJs House of the Year: A Contemporary Home With Hawaiian Spirit \r\n1/30/2020A modern, 7,500 square-foot home connects owner Elizabeth Grossman to the nature and spiritual vortex that drew her to Lanikai, a neighborhood on Oahu. She gives us a tour, and explai… "
+    },
+    {
+      "id": 6,
+      "author": null,
+      "category": "business",
+      "title": "Fistbumps and Clear Visors: Holding an Election During a Pandemic",
+      "description": "South Korea held the world’s first major national election during the coronavirus pandemic. WSJ’s Andrew Jeong explains the election-day blueprint that allowed millions to head to the polls and how it could offer a road map for other countries. Photo: Denis B…",
+      "url": "https://www.wsj.com/video/fistbumps-and-clear-visors-holding-an-election-during-a-pandemic/EC047D26-7E8E-4353-B780-6975090D29D3.html",
+      "urlToImage": "http://m.wsj.net/video/20200416/skelect0416/skelect0416_1280x720.jpg",
+      "publishedAt": "2020-04-16T09:32:35Z",
+      "content": "WSJs House of the Year: A Contemporary Home With Hawaiian Spirit \r\n1/30/2020A modern, 7,500 square-foot home connects owner Elizabeth Grossman to the nature and spiritual vortex that drew her to Lanikai, a neighborhood on Oahu. She gives us a tour, and explai…"
+    },
+    {
+      "id": 7,
+      "author": null,
+      "category": "business",
+      "title": "Why Congress Can’t Move Quickly to Approve More Small-Business Loans",
+      "description": "The small-business loan program designed to support businesses hit by the pandemic is expected to run out of money soon. WSJ’s Gerald F. Seib explains the forces keeping Congress from fixing that problem now. Photo: Josh Edelson/AFP via Getty Images",
+      "url": "https://www.wsj.com/video/why-congress-cant-move-quickly-to-approve-more-small-business-loans/C91001FD-8405-4B0B-8CC8-1155DDCBEAF9.html",
+      "urlToImage": "http://m.wsj.net/video/20200415/041520seibsecondaid/041520seibsecondaid_1280x720.jpg",
+      "publishedAt": "2020-04-16T09:30:00Z",
+      "content": "WSJs House of the Year: A Contemporary Home With Hawaiian Spirit \r\n1/30/2020A modern, 7,500 square-foot home connects owner Elizabeth Grossman to the nature and spiritual vortex that drew her to Lanikai, a neighborhood on Oahu. She gives us a tour, and explai…"
+    },
+    {
+      "id": 8,
+      "author": "Josh Zumbrun",
+      "category": "business",
+      "title": "World economy expected to contract by 3%. In 2009 it contracted 0.1%.",
+      "description": "Severity is unmatched by anything aside from Great Depression, according to IMF outlook",
+      "url": "https://www.wsj.com/articles/coronavirus-afflicted-global-economy-is-almost-certainly-in-recession-11586867402",
+      "urlToImage": "https://images.wsj.net/im-175987/social",
+      "publishedAt": "2020-04-16T03:04:23Z",
+      "content": "WASHINGTONThe global economy has almost certainly entered a recession affecting most of the world, with a severity unmatched by anything aside from the Great Depression, the International Monetary Fund said Tuesday.\r\nThe IMF, in a new outlook, said the world … "
+    },
+    {
+      "id": 9,
+      "author": "Bojan Pancevski, William Boston",
+      "category": "business",
+      "title": "Germany to Begin Gradually Reopening Its Economy Next Week - The Wall Street Journal",
+      "description": "Germany to Begin Gradually Reopening Its Economy Next Week The Wall Street Journal Coronavirus: Germany slowly eases lockdown measures BBC News Europe Plans Easing of Lockdown Bloomberg Politics How Germany plans to gradually reopen its economy after a weeksl…",
+      "url": "https://www.wsj.com/articles/germany-to-begin-gradually-reopening-its-economy-next-week-11586989014",
+      "urlToImage": "https://images.wsj.net/im-176760/social",
+      "publishedAt": "2020-04-15T22:52:51Z",
+      "content": "BERLINGermany will start reopening its economy next week after spending a month in a partial lockdown, Chancellor Angela Merkel said Wednesday, hours before the countrys leading car maker said its European factories would resume production as early as next we… "
+    },
+    {
+      "id": 10,
+      "author": "Orla McCaffrey",
+      "category": "business",
+      "title": "Stimulus Payments Slow Down Online Banking - The Wall Street Journal",
+      "description": "Stimulus Payments Slow Down Online Banking The Wall Street Journal Santander, TD clients checking for coronavirus stimulus deposits cause service outages Fox Business Bank websites, hit by wave of stimulus interest, experience some outages and slowdowns NBC N…",
+      "url": "https://www.wsj.com/articles/stimulus-payments-slow-down-online-banking-11586989847",
+      "urlToImage": "https://images.wsj.net/im-176779/social",
+      "publishedAt": "2020-04-15T22:48:25Z",
+      "content": "Customers at some banks across the country were temporarily unable to access their accounts online or through mobile apps on Wednesday, shortly after the first round of government stimulus checks started landing in bank accounts.\r\nCustomers reported trouble a…"
+    },
+    {
+      "id": 11,
+      "author": null,
+      "category": "business",
+      "title": "Parisians Mark First Anniversary of Notre Dame Fire",
+      "description": "French President Emmanuel Macron aimed to have the Notre Dame Cathedral rebuilt by 2024, but one year after the devastating fire, repairs are now in limbo because of the novel coronavirus. Photo: Philippe Lopez/AFP",
+      "url": "https://www.wsj.com/video/parisians-mark-first-anniversary-of-notre-dame-fire/B0E225D4-6545-425F-90D6-35B11200C4B7.html",
+      "urlToImage": "http://m.wsj.net/video/20200415/051520notredameanniversaryv3/051520notredameanniversaryv3_1280x720.jpg",
+      "publishedAt": "2020-04-15T22:43:09Z",
+      "content": "WSJs House of the Year: A Contemporary Home With Hawaiian Spirit \r\n1/30/2020A modern, 7,500 square-foot home connects owner Elizabeth Grossman to the nature and spiritual vortex that drew her to Lanikai, a neighborhood on Oahu. She gives us a tour, and explai… "
+    },
+    {
+      "id": 12,
+      "author": "Benjamin Mullin",
+      "category": "business",
+      "title": "Life at CNN: Skeleton Staff, Record Ratings, Vanishing Ads...",
+      "description": "Life at CNN: Skeleton Staff, Record Ratings, Vanishing Ads... (First column, 16th story, link ) Related stories: TROUBLES: L.A. TIMES AD REVENUE 'NEARLY ELIMINATED'... Workers at HOLLYWOOD REPORTER, BILLBOARD Vandalize Site After Job Cuts... Drudge Report Fee…",
+      "url": "https://www.wsj.com/articles/life-at-cnn-skeleton-staff-record-ratings-and-vanishing-ads-11586984881",
+      "urlToImage": "https://images.wsj.net/im-176264/social",
+      "publishedAt": "2020-04-15T21:43:39Z",
+      "content": "On a recent conference call, CNN chief Jeff Zucker urged editors and producers at the network not to shift focus from coronavirus news updates despite weeks of wall-to-wall coverage of the pandemic.\r\nYou need to stay on the news, Mr. Zucker said, according to… "
+    },
+    {
+      "id": 13,
+      "author": "Charles Passy",
+      "category": "business",
+      "title": "Restaurants Pushed Into the Grocery Business...",
+      "description": "Restaurants Pushed Into the Grocery Business... (First column, 13th story, link ) Related stories: Eating Out May Never Be Same: Waiter Wearing Gloves, Face Mask; Menu Disposable...",
+      "url": "https://www.wsj.com/articles/coronavirus-pushes-restaurants-into-the-grocery-business-11586983087",
+      "urlToImage": "https://images.wsj.net/im-176539/social",
+      "publishedAt": "2020-04-15T20:52:39Z",
+      "content": "Soon after St. John Frizell was forced to shut down Fort Defiance, his restaurant and bar in Brooklyns Red Hook neighborhood, because of the pandemic, he struggled to figure out a way to bring in any revenue.\r\nA plan to offer takeout fizzled. But Mr. Frizell … "
+    },
+    {
+      "id": 14,
+      "author": "Chris Kornelis",
+      "title": "What to Watch: Feminism’s Adversary Phyllis Schlafly Is a Star in Hulu’s ‘Mrs. America’ - The Wall Street Journal",
+      "description": "What to Watch: Feminism’s Adversary Phyllis Schlafly Is a Star in Hulu’s ‘Mrs. America’ The Wall Street Journal Review: Cate Blanchett, Rose Byrne And More Shine In 'Mrs. America' NPR Mrs. America Isn’t Just a History Lesson Vulture FX on Hulu's 'Mrs. America…",
+      "url": "https://www.wsj.com/articles/what-to-watch-feminisms-adversary-phyllis-schlafly-is-a-star-in-hulus-mrs-america-11586977324",
+      "urlToImage": "https://images.wsj.net/im-176318/social",
+      "publishedAt": "2020-04-15T19:10:58Z",
+      "content": "A Case for Not Binge-Watching Erica Rhodes usually isnt much for reality TV, but shes been losing herself for hours sheltering in place with episodes of dumb reality stuff like Netflixs Love Is Blind. But even in the age of quarantine, there are some shows th… "
+    },
+    {
+      "id": 15,
+      "author": "Kristina Peterson",
+      "category": "business",
+      "title": "Small-Business Aid Program Set to Run Out of Money Later Today - The Wall Street Journal",
+      "description": "Negotiations between Congress, White House over fresh funding set to resume as initial $350 billion allocation nears depletion",
+      "url": "https://www.wsj.com/articles/small-business-aid-program-set-to-run-out-of-money-later-today-11586971294",
+      "urlToImage": "https://images.wsj.net/im-176615/social",
+      "publishedAt": "2020-04-15T18:55:12Z",
+      "content": "WASHINGTONA small-business loan program at the center of a standoff between congressional Democrats and Republicans aligned with the White House is expected to run out of money later Wednesday, according to a person familiar with the fund.\r\nNegotiations betwe… "
+    },
+    {
+      "id": 16,
+      "author": "Michael C. Bender",
+      "category": "business",
+      "title": "Business Urges Dramatic Increase of Testing...",
+      "description": "Business Urges Dramatic Increase of Testing... (Top headline, 9th story, link ) Related stories: Lockdowns anti-constitutional? Furious crowds protest quarantine in Michigan... ANOTHER MONTH: DC extends stay-at-home order through May 15... Cuomo to order all …",
+      "url": "https://www.wsj.com/articles/business-leaders-tell-trump-to-dramatically-increase-coronavirus-testing-11586974130",
+      "urlToImage": "https://images.wsj.net/im-176651/social",
+      "publishedAt": "2020-04-15T18:34:36Z",
+      "content": "WASHINGTONIn the first meeting of President Trumps task force to reopen the economy, banking and financial services executives said the administration needed to dramatically increase the availability of coronavirus testing before the public would be confident… "
+    },
+    {
+      "id": 17,
+      "author": "Melissa Korn",
+      "category": "business",
+      "title": "Students May Be Able to Take SAT, ACT at Home Due to Coronavirus - The Wall Street Journal",
+      "description": "Students May Be Able to Take SAT, ACT at Home Due to Coronavirus The Wall Street Journal After Coronavirus, Colleges Worry: Will Students Return? The New York Times Higher education in America is on the brink (opinion) CNN Coronavirus may help colleges revive…",
+      "url": "https://www.wsj.com/articles/students-may-be-able-to-take-sat-act-at-home-due-to-coronavirus-11586971894",
+      "urlToImage": "https://images.wsj.net/im-176629/social",
+      "publishedAt": "2020-04-15T18:31:45Z",
+      "content": "After canceling springtime SAT and ACT test dates to comply with limits on large gatherings due to the coronavirus pandemic, the College Board and ACT are now making plans so high-school students can take the college-admission exams come fall.\r\nThe College Bo… "
+    },
+    {
+      "id": 18,
+      "author": "Michael R. Gordon",
+      "category": "business",
+      "title": "Possible Chinese Nuclear Testing Stirs U.S. Concern...",
+      "description": "Possible Chinese Nuclear Testing Stirs U.S. Concern... (Third column, 1st story, link ) Related stories: MAG: Did Xi Jinping Deliberately Sicken World? Whistle-blowers remain missing... No public warning for 6 key days...",
+      "url": "https://www.wsj.com/articles/possible-chinese-nuclear-testing-stirs-u-s-concern-11586970435",
+      "urlToImage": "https://images.wsj.net/im-176258/social",
+      "publishedAt": "2020-04-15T17:22:38Z",
+      "content": "China might be secretly conducting nuclear tests with very low explosive power despite Beijings assertions that it is strictly adhering to an international accord banning all nuclear tests, according to a new arms-control report to be made public by the State… "
+    },
+    {
+      "id": 19,
+      "author": "Liza Lin, Timothy W. Martin",
+      "category": "science",
+      "title": "New Age of Digital Surveillance...",
+      "description": "New Age of Digital Surveillance... (Top headline, 7th story, link ) Related stories: Lockdowns anti-constitutional? Furious crowds protest quarantine in Michigan... ANOTHER MONTH: DC extends stay-at-home order through May 15... Man commits murder day after vi…",
+      "url": "https://www.wsj.com/articles/coronavirus-paves-way-for-new-age-of-digital-surveillance-11586963028",
+      "urlToImage": "https://images.wsj.net/im-176392/social",
+      "publishedAt": "2020-04-15T17:07:36Z",
+      "content": "In South Korea, investigators scan smartphone data to find within 10 minutes people who might have caught the coronavirus from someone they met. Israel has tapped its Shin Bet intelligence unit, usually focused on terrorism, to track down potential coronaviru…"
+    },
+    {
+      "id": 20,
+      "author": null,
+      "category": "science",
+      "title": "WHO Responds to U.S. Halt in Funding",
+      "description": "The head of the World Health Organization, Dr. Tedros Adhanom Ghebreyesus, urged solidarity in the global response to the coronavirus pandemic and said they regret the Trump administration’s decision to suspend funding to the WHO. Photo: Salvatore Di Nolfi/Sh…",
+      "url": "https://www.wsj.com/video/who-responds-to-us-halt-in-funding/7E954F16-4D3D-4420-BF37-5CC6557B4DB8.html",
+      "urlToImage": "http://m.wsj.net/video/20200415/041520whobriefing/041520whobriefing_1280x720.jpg",
+      "publishedAt": "2020-04-15T16:42:19Z",
+      "content": "WSJs House of the Year: A Contemporary Home With Hawaiian Spirit \r\n1/30/2020A modern, 7,500 square-foot home connects owner Elizabeth Grossman to the nature and spiritual vortex that drew her to Lanikai, a neighborhood on Oahu. She gives us a tour, and explai…"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "newsId": 2,
+      "comm": "Really great news!"
+    }
   ]
 }
