@@ -14,21 +14,36 @@
       "lastname": "Oprescu",
       "username": "alexoprescu25",
       "email": "alexandru.oprescu@outlook.com",
+      "imageUrl": "https://images.pexels.com/photos/1138903/pexels-photo-1138903.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+      "adress": "Str. Lunga 91, Brasov, Romania",
+      "birthday": "",
       "password": "qwerty",
       "retype-password": "qwerty",
       "id": 2
+    },
+    {
+      "firstname": "Johnny",
+      "lastname": "English",
+      "username": "johnny",
+      "email": "johnny@yahoo.com",
+      "password": "parola",
+      "retype-password": "parola",
+      "imageUrl": "",
+      "address": "New York",
+      "birthday": "",
+      "id": 3
     }
   ],
   "news": [
     {
       "id": 2,
       "author": "The Editorial Board",
-      "title": "The Central Bank That Ate Japan - The Wall Street Journal",
+      "title": "The Central Bank That Ate Japan - The Wall Street Journal ",
       "description": "The Central Bank That Ate Japan  The Wall Street Journal\r\nBank of Japan ramps up stimulus as virus pain deepens  Reuters\r\nBOJ's Kuroda channels Draghi with 'whatever it takes' vow  Nikkei Asian Review\r\nTo Help Businesses Bor…",
       "url": "https://www.wsj.com/articles/the-central-bank-that-ate-japan-11588026341",
       "urlToImage": "https://images.wsj.net/im-180966/social",
       "publishedAt": "2020-04-27T22:37:46Z",
-      "content": "This is a busy week in central banking with meetings at the Bank of Japan, the Federal Reserve and European Central Bank. Thank Tokyo for going first, and delivering a warning about the limits, and dangers, of firing monetary bazookas at the coronavirus crisi… ",
+      "content": "This is a busy week in central banking with meetings at the Bank of Japan, the Federal Reserve and European Central Bank. Thank Tokyo for going first, and delivering a warning about the limits, and dangers, of firing monetary bazookas at the coronavirus crisi…",
       "category": "business"
     },
     {
@@ -39,6 +54,7 @@
       "url": "https://www.engadget.com/apple-2018-ipad-pro-sale-bh-195836706.html",
       "urlToImage": "https://o.aolcdn.com/images/dims?resize=1200%2C630&crop=1200%2C630%2C0%2C0&quality=80&image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2020-04%2F06367f20-88be-11ea-9f8f-62c19b999f93&client=amp-blogside-v2&signature=782ad527e17d4be03606bca29e780a04f0e37d7d",
       "publishedAt": "2020-04-27T19:58:36Z",
+      "category": "tech",
       "content": "Buy 11-inch iPad Pro at B&amp;H - $799\r\nBuy 12.9-inch iPad Pro at B&amp;H - $799\r\nShop B&amp;H iPad Pro sale\r\nEngadget's Chris Velazco gave the 2018 iPad Pro a score of 84 when it first came out. He particularly liked the updated Apple Pencil and the iPad Pro…"
     },
     {
@@ -225,13 +241,342 @@
       "urlToImage": "http://m.wsj.net/video/20200415/041520whobriefing/041520whobriefing_1280x720.jpg",
       "publishedAt": "2020-04-15T16:42:19Z",
       "content": "WSJs House of the Year: A Contemporary Home With Hawaiian Spirit \r\n1/30/2020A modern, 7,500 square-foot home connects owner Elizabeth Grossman to the nature and spiritual vortex that drew her to Lanikai, a neighborhood on Oahu. She gives us a tour, and explai…"
+    },
+    {
+      "author": "Natasha Mascarenhas",
+      "title": "Lyft's virtual internship gets further slimmed down: less pay, shorter program",
+      "description": "Lyft has slimmed down its internship program from 12 weeks to eight weeks, cut some intern salaries by half and rescinded its housing stipend, TechCrunch has learned. The company confirmed that it has shortened the internship and that it only cut some intern …",
+      "url": "https://techcrunch.com/2020/05/04/lyfts-virtual-internship-gets-further-slimmed-down-less-pay-shorter-program/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/03/internships-cancelled.jpg?w=753",
+      "publishedAt": "2020-05-04T19:23:32Z",
+      "content": "Lyft has slimmed down its internship program from 12 weeks to eight weeks, cut some intern salaries by half and rescinded its housing stipend, TechCrunch has learned. The company confirmed that it has shortened the internship and that it only cut some intern … [+1201 chars]"
+    },
+    {
+      "id": 21,
+      "author": "Devin Coldewey",
+      "title": "Google Meet shows up in Gmail inboxes, a few years too late",
+      "description": "Google Meet — the video call service formerly known as Hangouts Meet, which itself was an offshoot from Hangouts, not to be confused with Google Chat, Duo, Allo, or any of the company’s other communications products — is finally making its debut on Gmail acco…",
+      "url": "https://techcrunch.com/2020/05/04/google-meet-shows-up-in-gmail-inboxes-a-few-years-too-late/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/03/meeting-apps-ios1.jpg?w=711",
+      "publishedAt": "2020-05-04T19:09:34Z",
+      "category": "tech",
+      "content": "Google Meet the video call service formerly known as Hangouts Meet, which itself was an offshoot from Hangouts, not to be confused with Google Chat, Duo, Allo, or any of the company’s other communications products is finally making its debut on Gmail accounts… [+3766 chars]"
+    },
+    {
+      "id": 22,
+      "author": "Darrell Etherington",
+      "title": "Max Q: Countdown to a return to U.S. astronaut launches",
+      "description": "Last week was a fairly busy week in space news, but the dominating story was preparation for the first ever commercial crew launch that will actually carry human astronauts to space. This is, in many ways, the culmination of years of work and billions of doll…",
+      "url": "https://techcrunch.com/2020/05/04/max-q-countdown-to-a-return-to-u-s-astronaut-launches/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/03/hurleyand_behnken.jpg?w=764",
+      "publishedAt": "2020-05-04T18:43:32Z",
+      "category": "tech",
+      "content": "Last week was a fairly busy week in space news, but the dominating story was preparation for the first ever commercial crew launch that will actually carry human astronauts to space. This is, in many ways, the culmination of years of work and billions of doll… [+3031 chars]"
+    },
+    {
+      "id": 23,
+      "author": "Natasha Lomas",
+      "title": "UK's coronavirus tracing app strategy faces fresh questions over transparency and interoperability",
+      "description": "The UK’s data protection watchdog confirmed today the government still hasn’t given it sight of a key legal document attached to the coronavirus contacts tracing app which is being developed by the NHSX, the digital transformation branch of the country’s Nati…",
+      "url": "https://techcrunch.com/2020/05/04/uks-coronavirus-tracing-app-strategy-faces-fresh-questions-over-transparency-and-interoperability/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/03/GettyImages-1207957894.jpg?w=600",
+      "publishedAt": "2020-05-04T18:39:46Z",
+      "category": "tech",
+      "content": "The UK’s data protection watchdog confirmed today the government still hasn’t given it sight of a key legal document attached to the coronavirus contacts tracing app which is being developed by the NHSX, the digital transformation branch of the country’s Nati… [+14060 chars]"
+    },
+    {
+      "id": 24,
+      "author": "Frederic Lardinois",
+      "title": "AWS launches the $995 Elemental Link for streaming video to its cloud",
+      "description": "AWS today announced the launch of the Elemental Link, a small hardware device that makes it easy to connect a live video source to the AWS Elemental Media Live service for broadcast-grade live video processing in the cloud. The $995 Link, which weighs in at l…",
+      "url": "https://techcrunch.com/2020/05/04/aws-launches-the-995-elemental-link-for-streaming-video-to-its-cloud/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/05/Link_image_v2.c9114842c9b27345bb2080ebe195c2cf15810cfd.png?w=718",
+      "publishedAt": "2020-05-04T18:07:06Z",
+      "category": "tech",
+      "content": "AWS today announced the launch of the Elemental Link, a small hardware device that makes it easy to connect a live video source to the AWS Elemental Media Live service for broadcast-grade live video processing in the cloud. The $995 Link, which weighs in at l… [+1948 chars]"
+    },
+    {
+      "id": 25,
+      "author": "Kirsten Korosec",
+      "title": "Uber subsidiary Careem to slash workforce by 31%, suspends bus transport app",
+      "description": "Careem, the Dubai-based ride-hailing and delivery company that was acquired by Uber last year, is cutting its workforce by 31% and suspending its mass transportation business due to affects from the COVID-19 pandemic. The layoffs will affect more than 530 emp…",
+      "url": "https://techcrunch.com/2020/05/04/uber-subsidiary-careem-to-slash-workforce-by-31-suspends-bus-transport-app/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2017/06/pr_1.jpg?w=567",
+      "publishedAt": "2020-05-04T18:05:28Z",
+      "category": "tech",
+      "content": "Careem, the Dubai-based ride-hailing and delivery company that was acquired by Uber last year, is cutting its workforce by 31% and suspending its mass transportation business due to affects from the COVID-19 pandemic.\r\nThe layoffs will affect more than 530 em… [+2093 chars]"
+    },
+    {
+      "id": 26,
+      "author": "Jake Bright",
+      "title": "Why COVID-19 could delay Interswitch, Africa's next big IPO",
+      "description": "The economic effects of COVID-19 could delay Africa’s next big IPO — that of Nigerian fintech unicorn Interswitch. If so, it wouldn’t be the first time the Lagos-based payments company’s plans for going public were postponed; the tech world has been anticipat…",
+      "url": "https://techcrunch.com/2020/05/04/why-covid-19-could-delay-interswitch-africas-next-big-ipo/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/04/IPO-africa-1.png?w=753",
+      "publishedAt": "2020-05-04T18:03:10Z",
+      "category": "tech",
+      "content": "The economic effects of COVID-19 could delay Africa’s next big IPO that of Nigerian fintech unicorn Interswitch.\r\nIf so, it wouldn’t be the first time the Lagos-based payments company’s plans for going public were postponed; the tech world has been anticipati… [+1573 chars]"
+    },
+    {
+      "id": 27,
+      "author": "Sarah Perez",
+      "title": "Soundcloud to launch live original programming on Twitch",
+      "description": "Music streaming service Soundcloud is capitalizing on consumer demand for live entertainment amid the COVID-19 quarantine with the launch of its own slate of originally produced live programming. The company today announced its plans for a new Twitch channel …",
+      "url": "https://techcrunch.com/2020/05/04/soundcloud-to-launch-live-original-programming-on-twitch/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/05/soundcloud-twitch.png?w=601",
+      "publishedAt": "2020-05-04T18:01:07Z",
+      "category": "tech",
+      "content": "Music streaming service Soundcloud is capitalizing on consumer demand for live entertainment amid the COVID-19 quarantine with the launch of its own slate of originally produced live programming. The company today announced its plans for a new Twitch channel … [+3537 chars]"
+    },
+    {
+      "id": 28,
+      "author": "Alex Wilhelm, Natasha Mascarenhas",
+      "title": "Robinhood raises $280M, pushing its valuation to $8.3B",
+      "description": "As expected, Robinhood has closed a new round of capital. The late-stage, consumer investing app announced today that it has closed a $280 million Series F funding at an $8.3 billion valuation. This closely tracks prior coverage that the firm was hunting for …",
+      "url": "https://techcrunch.com/2020/05/04/robinhood-raises-280m-pushing-its-valuation-to-8-3b/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2018/02/robinhood-crypto.png?w=764",
+      "publishedAt": "2020-05-04T17:48:55Z",
+      "category": "tech",
+      "content": "As expected, Robinhood has closed a new round of capital. The late-stage, consumer investing app announced today that it has closed a $280 million Series F funding at an $8.3 billion valuation. This closely tracks prior coverage that the firm was hunting for … [+4865 chars]"
+    },
+    {
+      "id": 29,
+      "author": "Darrell Etherington",
+      "title": "NWU researchers develop a throat-worn wearable that could offer early warnings for COVID-19 patients",
+      "description": "The ongoing COVID-19 pandemic is resulting in big shifts across industries, but the development of more long-term solutions that address a future in which what we need to do is mitigate the impact of the new coronavirus seems like a worthwhile place to invest…",
+      "url": "https://techcrunch.com/2020/05/04/nwu-researchers-develop-a-throat-worn-wearable-that-could-offer-early-warnings-for-covid-19-patients/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/05/wearable-covid.jpg?w=711",
+      "publishedAt": "2020-05-04T17:34:34Z",
+      "category": "tech",
+      "content": "The ongoing COVID-19 pandemic is resulting in big shifts across industries, but the development of more long-term solutions that address a future in which what we need to do is mitigate the impact of the new coronavirus seems like a worthwhile place to invest… [+3370 chars]"
+    },
+    {
+      "id": 30,
+      "category": "romania",
+      "author": "Realitatea.net",
+      "title": "Premierul Ludovic Orban, noi măsuri în apropierea STĂRII DE ALERTĂ: După 15 mai, eliminăm restricțiile în funcție de riscul epidemiologic - Realitatea.NET",
+      "description": "Prim-ministrul Ludovic Orban a făcut, luni, la ora 20.00, o declarație de presă în care a anunțat cele mai noi măsuri luate de Guvern în apropierea stării de alertă. Orban a menționat că, luni, s-au împlinit șase luni de mandat al Guvernului pe care îl conduc…",
+      "url": "https://www.realitatea.net/stiri/actual/premierul-ludovic-orban-declaratiile-momentului-ora-2000-noi-masuri-in-apropierea-starii-de-alerta_5eb022eeb99379600b2e2edc",
+      "urlToImage": "https://media.realitatea.net/multimedia/image/202004/full/orban_f31cbcf372.jpg",
+      "publishedAt": "2020-05-04T18:41:15Z",
+      "content": "Declaraiile premierului:\r\nRomânia nu a fost pregtit pentru acest pericol. Nu am avut stocuri strategice de echipamente i medicamente. Izbucnirea epidemiei ne-a prins fr stocuri la medicamente, dispozitive. S-a fcut un efort uria. Am depit cu succes aceast cri… [+14149 chars]"
+    },
+    {
+      "id": 31,
+      "category": "romania",
+      "author": null,
+      "title": "Orban: Vrem să ajungem la 15.000 de teste pe zi. România nu a fost pregătită pentru epidemie - stirileprotv.ro",
+      "description": "Orban: Vrem să ajungem la 15.000 de teste pe zi. România nu a fost pregătită pentru epidemie",
+      "url": "https://stirileprotv.ro/stiri/politic/ludovic-orban-va-sustine-o-decalaratie-de-presa-la-ora-20-00-la-palatul-victoria.html",
+      "urlToImage": "https://image.stirileprotv.ro/media/images/1408x882/Apr2020/62118279.jpg",
+      "publishedAt": "2020-05-04T18:06:25Z",
+      "content": "Prim-ministrul Ludovic Orban a susinut o conferin de pres la Palatul Victoria în care a prezentat raportul privind activitatea Guvernului în lupta cu noul coronavirus.\r\nSinteza declarațiilor susținute de Ludovic Orban:\r\n- România nu a fost pregătită pentru ac… [+5248 chars]"
+    },
+    {
+      "id": 32,
+      "category": "romania",
+      "author": "Digi Sport",
+      "title": "Noi dezvăluiri despre Gigi Becali: ”Se ruga, punându-se în genunchi, să-i dea 'acaretele' pierdute la barbut!” Ce poreclă avea - DigiSport",
+      "description": "Fostul deputat PSD, Cristian Rizea, a făcut mai multe dezvăluiri depre Gigi Becali, finanțatorul FCSB, în cartea sa ”Spovedania lui Rizea”.",
+      "url": "https://www.digisport.ro/special/noi-dezvaluiri-despre-gigi-becali-se-ruga-punandu-se-in-genunchi-sa-i-dea-acaretele-pierdute-la-barbut-ce-porecla-avea-832966",
+      "urlToImage": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxdHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjAl/MkYwNSUyRjA0JTJGMTE4MjMzNF8xMTgy/MzM0X0dpZ2lfQmVjYWxpXzEuanBnJnc9/NjQwJmg9NDgwJnpjPTEmaGFzaD1hMWJj/NmRlMmJiNDJhN2ViN2U4YzUxYTBhOWU3YWVhYQ==.thumb.jpg",
+      "publishedAt": "2020-05-04T16:50:00Z",
+      "content": "Acesta a povestit un episod din 1990, când actualul finanator de la FCSB a pierdut la barbut brrile i lanurile de aur, chiar înainte de nunta lui Gic Hagi cu prima soie.\r\nDezvluirile lui Rizea: Gigi se ruga în genunchi\r\nAm avut ocazia s-l cunosc pe Gigi chiar… [+1789 chars]"
+    },
+    {
+      "id": 33,
+      "category": "romania",
+      "author": "Adina Petcu",
+      "title": "Coronavirus în România LIVE UPDATE 4 mai. Peste 5.000 de persoane au fost declarate vindecate. Am ajuns la - Mediafax",
+      "description": "Coronavirus în România LIVE UPDATE 4 mai. Peste 5.000 de persoane au fost declarate vindecate. Am ajuns la 818 morţi / Situaţia în diaspora",
+      "url": "https://www.mediafax.ro/social/coronavirus-in-romania-live-update-4-mai-peste-5-000-de-persoane-au-fost-declarate-vindecate-am-ajuns-la-818-morti-situatia-in-diaspora-19113238",
+      "urlToImage": "https://storage0.dms.mpinteractiv.ro/media/1/1/1688/19113238/25/7559471-mediafax-foto-dani-amariei.jpg?width=640",
+      "publishedAt": "2020-05-04T16:40:47Z",
+      "content": "UPDATE ora 19.19 Noi decese din cauza Covid-19 în România. Bilanul ajunge la 818\r\nDeces 804\r\n Brbat, 72 ani, municipiul Bucureti \r\n Data internrii: 09.04.2020 Spitalul Victor Babe, febra, semne si simptome respiratorii i imagistica pulmonara modificata, este … [+12091 chars]"
+    },
+    {
+      "id": 34,
+      "category": "romania",
+      "author": "Adrian Gabor",
+      "title": "Planeta Neptun: Anuntul UIMITOR al NASA care te va Surprinde - iDevice.ro",
+      "description": "Planeta Neptun este cea mai indepartata de soare din intregul sistem solar, iar cei de la NASA au descoperit ceva ce exista doar acolo, si desigur ca uimeste din foarte multe puncte de vedere. Mai exact, cei de la NASA au anuntat ca planeta Neptun are cele ma…",
+      "url": "https://www.idevice.ro/2020/05/04/planeta-neptun-vanturi-415550/",
+      "urlToImage": "https://www.idevice.ro/wp-content/uploads/2020/05/Planeta-Neptun-vanturi.jpg",
+      "publishedAt": "2020-05-04T15:57:52Z",
+      "content": "Planeta Neptun este cea mai indepartata de soare din intregul sistem solar, iar cei de la NASA au descoperit ceva ce exista doar acolo, si desigur ca uimeste din foarte multe puncte de vedere. Mai exact, cei de la NASA au anuntat ca planeta Neptun are cele ma… [+2112 chars]"
+    },
+    {
+      "id": 35,
+      "category": "romania",
+      "author": "https://www.facebook.com/mobilissimo",
+      "title": "Picaj serios pentru Nokia! HMD a vândut 10 milioane de telefoane Nokia în primul trimestru din 2020, cu 44% mai puţin decât în 2019 - Mobilissimo.ro",
+      "description": "Probabil aţi remarcat că au început să apară tot mai multe rezultate trimestriale ale marilor companii tech şi producătoare de smartphone-uri. Acum avem şi câteva detalii despre HMD Global, care deţine brandul Nokia şi ar fi",
+      "url": "https://www.mobilissimo.ro/stiri-telefoane/picaj-serios-pentru-nokia",
+      "urlToImage": "https://images2.mobilissimo.ro/Z2k/5eb02b78bdf71.jpg",
+      "publishedAt": "2020-05-04T15:41:30Z",
+      "content": "Probabil ai remarcat c au început s apar tot mai multe rezultate trimestriale ale marilor companii tech i productoare de smartphone-uri. Acum avem i câteva detalii despre HMD Global, care deine brandul Nokia i ar fi vândut 10.3 milioane de telefoane în trimes… [+1478 chars]"
+    },
+    {
+      "id": 36,
+      "category": "romania",
+      "author": null,
+      "title": "România, printre singurele 5 state europene care nu au depășit vârful epidemiei Covid-19 - stirileprotv.ro",
+      "description": "România, printre singurele 5 state europene care nu au depășit vârful epidemiei Covid-19",
+      "url": "https://stirileprotv.ro/stiri/international/romania-printre-singurele-5-state-europene-care-nu-au-depasit-varful-epidemiei-covid-19.html",
+      "urlToImage": "https://image.stirileprotv.ro/media/images/1408x882/May2020/62123395.jpg",
+      "publishedAt": "2020-05-04T15:07:00Z",
+      "content": "Majoritatea rilor europene au depit perioada de vârf a epidemiei noului coronavirus - cu excepia a cinci ri, între care i România i Marea Britanie - a anunat luni directoarea ageniei sanitare a Uniunii Europene (UE), relateaz Reuters.\r\nDirectoarea Centrului E… [+1150 chars]"
+    },
+    {
+      "id": 37,
+      "category": "romania",
+      "author": "Andrei Cezar",
+      "title": "Andra, anunț important pentru fani: “Dragii mei, am o super veste”. Artista este în culmea fericirii - IMPACT",
+      "description": "Andra este în culmea fericirii după ce a reușit să câștige titlul de ”Favorite Romanian Star” în cadrul galei NICKELODEON’s Kids’ Choice Awards 2020: Celebrate Together, un spectacol virtual care a avut loc pe 2 mai. Andra, primul artist român care câștigă ac…",
+      "url": "https://www.impact.ro/andra-anunt-important-pentru-fani-dragii-mei-am-o-super-veste-artista-este-in-culmea-fericirii-38993.html",
+      "urlToImage": "https://www.impact.ro/wp-content/uploads/2020/05/441065001555335880.jpg",
+      "publishedAt": "2020-05-04T14:56:49Z",
+      "content": "Andra este în culmea fericirii dup ce a reuit s câtige titlul de Favorite Romanian Star în cadrul galei NICKELODEONs Kids Choice Awards 2020: Celebrate Together, un spectacol virtual care a avut loc pe 2 mai.\r\nAndra, primul artist român care câtig acest premi… [+1978 chars]"
+    },
+    {
+      "id": 38,
+      "category": "romania",
+      "author": "Vasile Constantin",
+      "title": "Apple a lansat o nouă versiune a laptopului MacBook Pro - Europa FM",
+      "description": "Apple a lansat luni o nouă versiune a laptopului MacBook Pro, de 13 inci, cu spațiu dublu de stocare în comparație cu modelele de generație anterioară, precum și cu un procesor mai rapid, a anunțat compania. Laptopurile au prețuri cuprinse între 1.199 și 1.29…",
+      "url": "https://www.europafm.ro/apple-a-lansat-o-noua-versiune-a-laptopului-macbook-pro/",
+      "urlToImage": "https://www.europafm.ro/wp-content/uploads/2020/05/McBook-Pro.jpg",
+      "publishedAt": "2020-05-04T13:56:47Z",
+      "content": "Apple a lansat luni o nou versiune a laptopului MacBook Pro, de 13 inci, cu spaiu dublu de stocare în comparaie cu modelele de generaie anterioar, precum i cu un procesor mai rapid, a anunat compania.\r\nLaptopurile au preuri cuprinse între 1.199 i 1.299 de doa… [+189 chars]"
+    },
+    {
+      "id": 39,
+      "category": "romania",
+      "author": null,
+      "title": "Laura Cosoi rupe tăcerea: ce spune despre relația dintre Smiley și Gina Pistol! Doamne ferește! - VoxBiz",
+      "description": "Laura Cosoi și Smiley formau unul dintre cele mai sudate cupluri din showbiz și toată lumea a crezut că va urma o nuntă ca-n povești între cei doi. Doar că după cinci ani de relație, aceștia și-au anu",
+      "url": "https://voxbiz.ro/laura-cosoi-rupe-tacerea-ce-spune-despre-relatia-dintre-smiley-si-gina-pistol-doamne-fereste.html",
+      "urlToImage": "https://cdn.voxbiz.ro/wp-content/uploads/2019/11/laura_cosoi_18.jpg",
+      "publishedAt": "2020-05-04T12:39:29Z",
+      "content": "Laura Cosoi i Smiley formau unul dintre cele mai sudate cupluri din showbiz i toat lumea a crezut c va urma o nunt ca-n poveti între cei doi. Doar c dup cinci ani de relaie, acetia i-au anunat desprirea. Motivul ar fi fost c artistul nu-i dorea o familie la a… [+879 chars]"
+    },
+    {
+      "id": 40,
+      "category": "romania",
+      "author": null,
+      "title": "Iohannis insista pe tema Tinutului Secuiesc: PSD promoveaza legi care sa duca la autonomie. Reactia lui Cazanciuc - Ziare.com",
+      "description": "Presedintele Klaus Iohannis a declarat luni, de la Palatul Cotroceni, ca nu are nicio problema cu persoanele de etnie maghiara, doar cu politicienii, in special cu cei din PSD, care ''culmea au incercat sa promoveze legislatie care priveste autonomia Tinutulu…",
+      "url": "http://www.ziare.com/klaus-johannis/presedinte/iohannis-insista-pe-tema-tinutului-secuiesc-psd-promoveaza-legi-care-sa-duca-la-autonomie-reactia-lui-corlatean-1609657",
+      "urlToImage": "http://s2.ziareromania.ro/?mmid=d73a3562b13e8374fa",
+      "publishedAt": "2020-05-04T12:17:00Z",
+      "content": "Presedintele Klaus Iohannis a declarat luni, de la Palatul Cotroceni, ca nu are nicio problema cu persoanele de etnie maghiara, doar cu politicienii, in special cu cei din PSD, care \"culmea au incercat sa promoveze legislatie care priveste autonomia Tinutului… [+3273 chars]"
+    },
+    {
+      "id": 41,
+      "category": "romania",
+      "author": "Redactia",
+      "title": "PSD a depus plângere la CNCD pe numele lui Klaus Iohannis - Antena3.ro",
+      "description": "PSD a depus plângere la CNCD pe numele lui Klaus Iohannis, în urma afirmaţiilor referitoare la complicitatea PSD în proiectul privind autonomia Ţinutului Secuiesc.",
+      "url": "https://www.antena3.ro/politica/psd-a-depus-plangere-la-cncd-pe-numele-lui-klaus-iohannis-569134.html",
+      "urlToImage": "https://www.antena3.ro/thumbs/big3/2020/05/04/psd-a-depus-plangere-la-cncd-pe-numele-lui-klaus-iohannis-660114.jpg",
+      "publishedAt": "2020-05-04T11:38:00Z",
+      "content": "PSD a depus plângere la Consiliul Naional pentru Combaterea Discriminrii, pe numele lui Klaus Iohannis, în urma afirmaiilor preedintelui referitoare la implicarea PSD în proiectul privind autonomia inutului Secuiesc.\r\nSocial-democraii consider afirmaiile disc… [+1297 chars]"
+    },
+    {
+      "id": 42,
+      "category": "romania",
+      "author": "Digi24",
+      "title": "Uber Eats anunță că se retrage din România. Când va deveni serviciul de livrări indisponibil - Digi24",
+      "description": "Grupul american Uber Technologies Inc a anunţat luni că serviciul de livrări Uber Eats îşi va înceta operaţiunile în Cehia, Egipt, Honduras, România, Arabia Saudită, Uruguay şi Ucraina",
+      "url": "https://www.digi24.ro/stiri/economie/companii/uber-eats-anunta-ca-se-retrage-din-romania-cand-va-deveni-serviciul-de-livrari-indisponibil-1301619",
+      "urlToImage": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA2dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjAl/MkYwNSUyRjA0JTJGMTE4MjIwNF8xMTgy/MjA0X0dldHR5SW1hZ2VzLTExNzg4MTc3/MzQuanBnJnc9NjQwJmg9NDgwJnpjPTEm/aGFzaD1iM2I0YzBjYzc2NGZmMDdhZWUzZTcyOTZjYjI4ZDk0Mw==.thumb.jpg",
+      "publishedAt": "2020-05-04T11:12:00Z",
+      "content": "Grupul american Uber Technologies Inc a anunat luni c serviciul de livrri Uber Eats îi va înceta operaiunile în Cehia, Egipt, Honduras, România, Arabia Saudit, Uruguay i Ucraina începând cu data de 4 iunie.\r\nÎn schimb, operaiunile care vizeaz serviciile de tr… [+583 chars]"
+    },
+    {
+      "id": 43,
+      "category": "romania",
+      "author": "Digi24",
+      "title": "Klaus Iohannis: Nu voi prelungi starea de urgență. Din 15 mai se vor deschide saloanele de coafură, cabinetele stomatologice și muzeele - Digi24",
+      "description": "Președintele Klaus Iohannis a avut luni o ședință la Palatul Cotroceni privind măsurile de gestionare a epidemiei COVID-19 cu premierul și mai mulți miniștri. La finalul întrevederii, Klaus Iohannis a declarat că nu va prelungi starea de urgență, iar din 15 m…",
+      "url": "https://www.digi24.ro/stiri/actualitate/klaus-iohannis-nu-voi-prelungi-starea-de-urgenta-din-15-mai-vom-avea-stare-de-urgenta-1301609",
+      "urlToImage": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA2dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjAl/MkYwNCUyRjIxJTJGMTE3OTEyNV8xMTc5/MTI1X3NlZGludGEtY29yb25hdmlydXMt/aW9oYW5uaXMtZ3V2ZXJudWwtb3JiYW4t/cHJlc2lkZW5jeS0zLmpwZyZ3PTY0MCZo/PTQ4MCZ6Yz0xJmhhc2g9NTkyYzhlZDk3NTFlN2RjYmFkNTU0OTBmNzJhNGI0Nzk=.thumb.jpg",
+      "publishedAt": "2020-05-04T11:05:00Z",
+      "content": "Preedintele Klaus Iohannis a avut luni o edin la Palatul Cotroceni privind msurile de gestionare a epidemiei COVID-19 cu premierul i mai muli minitri. La finalul întrevederii, Klaus Iohannis a declarat c nu va prelungi starea de urgen, iar din 15 mai va intra… [+6871 chars]"
+    },
+    {
+      "id": 44,
+      "category": "romania",
+      "author": "Andrei Cezar",
+      "title": "Războiul dintre Andreea Bălan și George Burcea se mută în instanță. Ce îi pregătește artista fostului soț - IMPACT",
+      "description": "”Războiul” dintre Andreea Bălan și George Burcea intră în linie dreaptă, iar ultima ”bătălie” dintre cei doi soți se va purta în sala de judecată. Potrivit unor surse, artista este hotărâtă să rupă definitiv legătura cu actualul ei soț, iar în acest context d…",
+      "url": "https://www.impact.ro/razboiul-dintre-andreea-balan-si-george-burcea-se-muta-in-instanta-ce-ii-pregateste-artista-fostului-sot-38842.html",
+      "urlToImage": "https://www.impact.ro/wp-content/uploads/2020/05/motivul-pentru-care-andreea-balan-nu-va-divorta-de-george-burcea-ce-s-a-intamplat-in-vacanta-din-mauritius-840x500-1.jpg",
+      "publishedAt": "2020-05-04T10:49:17Z",
+      "content": "Rzboiul dintre Andreea Blan i George Burcea intr în linie dreapt, iar ultima btlie dintre cei doi soi se va purta în sala de judecat. Potrivit unor surse, artista este hotrât s rup definitiv legtura cu actualul ei so, iar în acest context dorete, ca în urma p… [+2201 chars]"
+    },
+    {
+      "id": 45,
+      "category": "romania",
+      "author": "Forbes România",
+      "title": "Laurențiu Luca, Director General Synevo România: Este foarte important ca autoritățile să susțină și să faciliteze pe termen lung accesul la servicii medicale - Forbes Romania",
+      "description": "Ce decizii de business a luat compania dvs. de la izbucnirea epidemiei de coronavirus? Urmărim cu atenție, încă din luna februarie, criza generată de răspândirea rapidă a noului coronavirus în China, precum și comunicările Organizației Mondiale a Sănătății. C…",
+      "url": "https://www.forbes.ro/laurentiu-luca-director-general-synevo-romania-163325",
+      "urlToImage": "https://www.forbes.ro/wp-content/uploads/2020/05/Laurentiu-Luca-director-general-Synevo-Romania-1.jpg",
+      "publishedAt": "2020-05-04T10:35:27Z",
+      "content": "Ce decizii de business a luat compania dvs. de la izbucnirea epidemiei de coronavirus?\r\nUrmrim cu atenie, înc din luna februarie, criza generat de rspândirea rapid a noului coronavirus în China, precum i comunicrile Organizaiei Mondiale a Sntii. China este i … [+6748 chars]"
+    },
+    {
+      "id": 46,
+      "category": "romania",
+      "author": "Adrian Cochino",
+      "title": "Raport oficial al SUA: China a ascuns deliberat gravitatea epidemiei pentru a importa masiv... - Libertatea",
+      "description": "Raport oficial al SUA: China a ascuns deliberat gravitatea epidemiei pentru a importa masiv echipament medical de protecție",
+      "url": "https://www.libertatea.ro/stiri/raport-sua-china-ascuns-epidemie-echipament-de-protectie-2981953",
+      "urlToImage": "https://static4.libertatea.ro/wp-content/uploads/2020/05/xi-jinping-hepta.jpg",
+      "publishedAt": "2020-05-04T10:03:43Z",
+      "content": "De Adrian Cochino,\r\nLuni, 04 mai 2020, 12:42\r\nLiderii chinezi au “ascuns în mod intenionat” severitatea pandemiei de restul lumii la începutul lui ianuarie, arat un raport redactat de Departamentul de Securitate Intern.\r\nRaportul de patru pagini spune c Beiji… [+3609 chars]"
+    },
+    {
+      "id": 47,
+      "category": "romania",
+      "author": "https://www.facebook.com/www.hotnews.ro",
+      "title": "Vela, despre amenzile în starea de urgență: Este evident că se fac abuzuri / Pe teren sunt foarte mul - HotNews",
+      "description": "Ministrul de interne, Marcel Vela, admite că unii polițiști au dat amenzi abuziv în perioada stării de urgență, explicând că „sunt foarte mulți tineri care au făcut doar șase luni",
+      "url": "https://www.hotnews.ro/stiri-esential-23973358-vela-despre-amenzile-starea-urgenta-este-evident-fac-abuzuri-teren-sunt-foarte-multi-tineri-care-facut-doar-sase-luni-scoala-politie.htm",
+      "urlToImage": "http://media.hotnews.ro/media_server1/image-2020-04-21-23890260-70-politie-controale-perioada-stare-urgenta.jpg",
+      "publishedAt": "2020-05-04T07:20:00Z",
+      "content": "Ministrul de interne, Marcel Vela, admite c unii poliiti au dat amenzi abuziv în perioada strii de urgen, explicând c „sunt foarte muli tineri care au fcut doar ase luni coala de Poliie i acum sunt pe teren”. „Am luat msuri ca s nu se fac abuzuri. C ele se fa…"
+    },
+    {
+      "id": 48,
+      "category": "romania",
+      "author": "Cristina Bellu",
+      "title": "Încă o veste bună: Polonezii de la AmRest au deschis un nou restaurant Burger King în România. Lanţul d - Ziarul Financiar",
+      "description": "Grupul polonez Amrest, prezent pe piaţa locală cu reţeaua de cafenele Starbucks şi începând din acest an cu lanţul de restaurante Burger King, anunţă că a deschis o unitate în Piaţa Universităţii din Capitală, care va deservi pentru început doar serviciile de…",
+      "url": "https://www.zf.ro/trebuiesarepornimbusinessul/veste-buna-polonezii-amrest-au-deschis-restaurant-burger-king-19101035",
+      "urlToImage": "https://storage0.dms.mpinteractiv.ro/media/1/1481/21335/19101035/1/andras-malmos-5bumkm5e08u-unsplash.jpg?width=600",
+      "publishedAt": "2020-05-04T06:30:28Z",
+      "content": "Grupul polonez Amrest, prezent pe piaa local cu reeaua de cafenele Starbucks i începând din acest an cu lanul de restaurante Burger King, anun c a deschis o unitate în Piaa Universitii din Capital, care va deservi pentru început doar serviciile de tip food de…"
     }
   ],
   "comments": [
     {
-      "id": 1,
-      "newsId": 2,
-      "comm": "Really great news!"
+      "id": 2,
+      "newsId": 3,
+      "comm": "Oh, yes!"
+    },
+    {
+      "user": "Alexandru Oprescu",
+      "newsId": "2",
+      "comm": "A really good article",
+      "id": 3
+    },
+    {
+      "user": "Johnny English",
+      "newsId": "2",
+      "comm": "I don't think so",
+      "id": 5
     }
   ]
 }

@@ -1,6 +1,6 @@
 .align {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .container {
@@ -10,7 +10,9 @@
 
 @media screen and (min-width: 800px) {
     .align {
+        display: flex;
         justify-content: space-around;
+        flex-direction: row;
     }
 
     .container {

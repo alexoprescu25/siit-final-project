@@ -3,9 +3,7 @@ import '../styles/NewsList.css';
 import axios from 'axios';
 
 import NewsCard from './NewsCard';
-import EditNews from './EditNews';
 import Sidebar from '../shared/sidebar/Sidebar';
-import NewsDetails from './NewsDetails';
 import Pagination from './Pagination';
 
 function NewsList({ category }) {
@@ -39,7 +37,9 @@ function NewsList({ category }) {
                 <div className="container">
                     <NewsCard posts={ currentPosts } />
                 </div>
-                <Sidebar />
+                <div className="sidebar">
+                    <Sidebar />
+                </div>
             </div>
             <Pagination postsPerPage={postsPerPage} totalPosts={news.length} paginate={paginate} />
         </>

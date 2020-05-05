@@ -50,15 +50,15 @@
 }
 
 .search-bar {
-    display: flex;
-    align-items: center;
+    display: none;
 }
 
 .search-input {
     background-color: transparent;
     border: none;
     border-bottom: 2px solid rgb(230, 208, 206);
-    width: 300px;
+    color: white;
+    width: 200px;
 }
 
 .search-bar svg {
@@ -70,17 +70,20 @@
     text-align: center;
 }
 
-.markets-bar {
-    display: flex;
-    justify-content: space-between;
-}
-
-.exchange-rates {
-    display: flex;
-    align-items: center;
-}
-
 @media screen and (min-width: 700px) {
+    .search-bar {
+        display: flex;
+        align-items: center;
+    }
+    
+    .search-input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid rgb(230, 208, 206);
+        color: white;
+        width: 200px;
+    }
+
     .bottom-links a {
         padding: 14px;
     }
@@ -92,5 +95,9 @@
     .list-btn:hover {
         color: white;
         transition-duration: 0.6s;
+    }
+
+    .search-input {
+        width: 300px;
     }
 }

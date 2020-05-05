@@ -20,42 +20,30 @@ function CovidDates() {
             const country = res.data.countryName;
 
             const response = await axios(`https://api.covid19api.com/live/country/${country}/status/confirmed/date/2020-03-21T13:13:30Z`);
-            setCovid(response.data[14]);
-            setGlobalCovid(null);
+            setCovid(response.data[response.data.length - 1]);
         }
     }
 
     async function getGlobal() {
         const res = await axios('https://api.covid19api.com/summary');
         setGlobalCovid(res.data.Global);
-        setCovid(null);
     }
 
-    
+    useEffect(() => {
+        getGlobal();
+    }, []);
 
     useEffect(() => {
         getInformations();
-        getGlobal();
     }, []);
 
     return (
         <>
-         {/* <div className="details-content">
-             <div className="content-style">
-                 <div className="coronavirus">
-                     <h4>Coronavirus Pandemic</h4>
-                     <p>Total Cases: { covid ? covid.Confirmed : globalCovid ? globalCovid.TotalConfirmed : 'Loading...' } </p>
-                     <p className="deaths">Deaths: { covid ? covid.Deaths : globalCovid ? globalCovid.TotalDeaths : 'Loading...' } </p>
-                     <p className="recovered">Recovered: { covid ? covid.Recovered : globalCovid ? globalCovid.TotalRecovered : 'Loading...' }</p>
-                 </div>
-             </div>
-         </div> */}
-
-<table className="covid-table">
+    <table className="covid-table">
         <tbody>
             <tr>
                 <th className="cases">World cases</th>
-                <th className="cases">RO Cases</th>
+                <th className="cases"> { covid ? covid.Country : 'Local Cases '} </th>
             </tr>
             <tr>
                 <th className="confirmed">Total confirmed</th>

@@ -1,0 +1,30 @@
+.profile-container {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fullname {
+    margin: 10px;
+}
+
+.adress {
+    font-size: 16px;
+    color: rgb(144, 144, 144);
+}
+
+.profile-username {
+    color: rgb(144, 144, 144);
+    margin-bottom: 6px;
+}
+
+.profile-image {
+    width: 140px;
+    height: 120px;
+    border-radius: 50%;
+}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import qs from 'qs';
 import '../styles/AddNews.css';
@@ -15,10 +15,21 @@ function AddNews() {
     let today = new Date();
     const [globalErrorMessage, setErrorMessage] = useState(null);
     const [globalSuccessMessage, setSuccessMessage] = useState(null);
+    const [name, setName] = useState('');
+    const userId = localStorage.getItem('userId');
+
+    async function getUser() {
+        const res = await axios('http://localhost:3002/users/' + userId);
+        setName(res.data.firstname + ' ' + res.data.lastname);
+    }
+
+    useEffect(() => {
+        getUser();
+    }, []);
 
     const [formData, setFormData] = useState({
         'title': '',
-        'author': '',
+        'author': name,
         'description': '',
         'urlToImage': '',
         'publishedAt': today,
@@ -100,6 +111,7 @@ function AddNews() {
         <div className="add-form">
             <form onSubmit={ handleSubmit }>
                 <div className="form-inputs">
+                <div className="align-inputs">
                     <input 
                         onChange={ handleInputChange }
                         value={ formData.title }
@@ -112,6 +124,8 @@ function AddNews() {
                     <div className="invalid-feedback">
                         { formError.title }
                     </div>
+                </div>
+                <div className="align-inputs">
                     <input 
                         onChange={ handleInputChange }
                         value={ formData.description }
@@ -124,6 +138,8 @@ function AddNews() {
                     <div className="invalid-feedback">
                         { formError.description }
                     </div>
+                    </div>
+                    <div className="align-inputs">
                     <input 
                         onChange={ handleInputChange }
                         value={ formData.urlToImage }
@@ -136,12 +152,15 @@ function AddNews() {
                     <div className="invalid-feedback">
                         { formError.urlToImage }
                     </div>
+                    </div>
                     <select id="category"
                             name="category" 
                             className="form-select"
+                            onChange={ handleInputChange }
                             >
+                        <option disabled selected>Select</option>
                         <option value="business">Business</option>
-                        <option value="coronavirus">Coronavirus</option>
+                        <option value="romania">Romania</option>
                         <option value="science">Science</option>
                         <option value="tech">Tech</option>
                     </select>

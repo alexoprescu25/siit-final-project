@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Redirect } from 'react-router-dom';
 
 import Header from './shared/Header';
 import Login from './auth/Login';
 import Register from './auth/Register';
 import AuthContext from './auth/AuthContext';
-import Contact from './sections/Contact';
 import NewsList from './news/NewsList';
 import NewsDetails from './news/NewsDetails';
 import EditNews from './news/EditNews';
 import FrontDetails from './shared/FrontDetails';
 import PrivateRoute from './auth/PrivateRoute';
 import AddNews from './news/AddNews';
+import Profile from './sections/Profile';
+import SearchFilter from './sections/SearchFilter';
 
 function App() {
 
@@ -31,6 +32,9 @@ function App() {
 
             <FrontDetails />
             <Header />
+            <Route exact path="/search">
+                <SearchFilter />
+            </Route>
             <Route exact path="/home">
                 <NewsList />
             </Route>
@@ -40,11 +44,20 @@ function App() {
             <Route exact path="/register">
                 <Register />
             </Route>
+            <Route exact path="/">
+                <NewsList />
+            </Route>
             <Route exact path="/business">
                 <NewsList category="business" />
             </Route>
             <Route exact path="/science">
                 <NewsList category="science"/>
+            </Route>
+            <Route exact path="/tech">
+                <NewsList category="tech"/>
+            </Route>
+            <Route exact path="/romania">
+                <NewsList category="romania"/>
             </Route>
             <Route exact path="/businessnews/:newsId">
                 <NewsDetails />
@@ -55,9 +68,9 @@ function App() {
             <PrivateRoute exact path="/adding">
                 <AddNews />
             </PrivateRoute>
-            <Route exact path="/contact">
-                <Contact />
-            </Route>
+            <PrivateRoute exact path="/profile">
+                <Profile />
+            </PrivateRoute>
 
         </BrowserRouter>
 

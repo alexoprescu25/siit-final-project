@@ -2,6 +2,22 @@
     color: rgb(119, 24, 24);
 }
 
+.add-form {
+    display: flex;
+    justify-content: center;
+}
+
+.add-input {
+    width: 200px;
+    height: 30px;
+    margin: 4px;
+}
+
+.form-textarea {
+    width: 200px;
+    height: 200px;
+}
+
 .add-button {
     background-color: rgb(52, 58, 64);
     color: white;
@@ -10,7 +26,12 @@
     border-radius: 4px;
 }
 
-@media screen and (min-width: 500px) {
+.align-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 700px) {
     .add-form {
         display: flex;
         justify-content: center;

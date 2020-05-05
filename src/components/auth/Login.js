@@ -6,8 +6,8 @@ import axios from 'axios';
 import AuthContext from './AuthContext';
 
 const errorMessage = {
-    'username': 'You must enter the username!',
-    'password': 'You must enter the password!'
+    'username': 'Please enter your username!',
+    'password': 'Please enter your password!'
 }
 
 function Login() {
@@ -26,6 +26,7 @@ function Login() {
 
     const [globalErrorMessage, setErrorMessage] = useState('');
     const [globalSuccessMessage, setSuccessMessage] = useState('');
+    const [isDirty, setDirty] = useState(false);
 
     async function handleSubmit(e) {
         e.preventDefault();
@@ -37,14 +38,17 @@ function Login() {
                 const db = res.data;
                 for(let i in db) {
                     if(db[i]['username'] === formData['username'] && db[i]['password'] === formData['password']) {
-                setSuccessMessage('Welcome back, ' + db[i]['firstname'] + '!');
-                setToken(db[i]['username']);
-                localStorage.setItem('token', db[i]['username']);
-                setTimeout(function() {
-                    window.history.back();
-                }, 1000);
-            }
-        }
+                        setSuccessMessage('Welcome back, ' + db[i]['firstname'] + '!');
+                        setToken(db[i]['username']);
+                        localStorage.setItem('token', db[i]['username']);
+                        localStorage.setItem('userId', db[i]['id']);
+                        localStorage.setItem('fullname', db[i]['firstname'] + ' ' + db[i]['lastname']);
+                        localStorage.setItem('firstname', db[i]['firstname']);
+                        setTimeout(function() {
+                            window.history.back();
+                        }, 1000);
+                    }
+                }
             } catch(e) {
                 console.log(e);
                 setErrorMessage('Your account does not exist!');
@@ -53,6 +57,8 @@ function Login() {
     }
 
     function handleInputChange(e) {
+        setDirty(true);
+
         setFormData({
             ...formData,
             [e.currentTarget.id]: e.currentTarget.value
@@ -106,18 +112,24 @@ function Login() {
                         type="text"
                         id="username"
                         name="username"
-                        className="form-username"
+                        className="form-username login-input"
                         placeholder="Username"
                     />
+                    <div className="invalid-feedback">
+                        { formError.username }
+                    </div>
                     <input 
                         onChange={ handleInputChange }
                         value={formData.password}
                         type="password"
                         id="password"
                         name="password"
-                        className="form-password"
+                        className="form-password login-input"
                         placeholder="Password"
                     />
+                    <div className="invalid-feedback">
+                        { formError.password }
+                    </div>
                     <div>
                     <input 
                         type="checkbox"
@@ -131,7 +143,7 @@ function Login() {
                         <p>Not registered? </p>
                         <Link to="/register">Create an Account</Link>
                     </div>
-                    <button type="submit" className="submit-button">Log In</button>
+                    <button type="submit" className="submit-button" disbled={ !isDirty }>Log In</button>
                 </form>
             </div>
         </>

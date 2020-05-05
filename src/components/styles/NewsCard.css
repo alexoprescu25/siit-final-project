@@ -31,3 +31,26 @@
 .article a:hover {
     text-decoration: underline;
 }
+
+.box {
+    display: flex;
+    justify-content: center;
+}
+
+.link-to-article {
+    text-decoration: none;
+    color: rgb(0, 51, 102);
+    margin: 5px;
+}
+
+.search-filter {
+    width: 500px;
+    height: 40px;
+    align-self: center;
+}
+
+.date {
+    display: flex;
+    align-content: center;
+    margin-left: 10px;
+}

@@ -1,3 +1,9 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .covid-table {
     margin-top: 10px;
     border-top: 1px solid rgb(226, 226, 226);

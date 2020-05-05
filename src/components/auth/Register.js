@@ -5,13 +5,13 @@ import qs from 'qs';
 import AuthContext from './AuthContext';
 
 const errorMessages = {
-    'firstname': 'You must enter your first name!',
-    'lastname': 'You must enter your last name!',
-    'username': 'You must enter your username!',
-    'email': 'You must enter your email!',
-    'password': 'You must enter your password!',
-    'retype-password': 'You must retype your password!',
-    'different-passwords': 'You must enter same password twice!',
+    'firstname': '*Please enter your first name!',
+    'lastname': '*Please enter your last name!',
+    'username': '*Please enter your username!',
+    'email': '*Please enter a valid email address!',
+    'password': '*You must enter your password!',
+    'retype-password': '*You must retype your password!',
+    'different-passwords': '*You must enter same password twice!',
     'existing': ' already existing!'
 }
 
@@ -23,7 +23,10 @@ function Register() {
         'username': '',
         'email': '',
         'password': '',
-        'retype-password': ''
+        'retype-password': '',
+        'imageUrl': '',
+        'address': '',
+        'birthday': ''
     });
 
     const [formError, setFormError] = useState({
@@ -39,6 +42,7 @@ function Register() {
 
     const [globalErrorMessage, setErrorMessage] = useState('');
     const [globalSuccessMessage, setSuccessMessage] = useState('');
+    const [isDirty, setDirty] = useState(false);
 
     const { setToken } = useContext(AuthContext);
 
@@ -65,6 +69,8 @@ function Register() {
     }
 
     function handleInputChange(e) {
+        setDirty(true);
+
         setFormData({
             ...formData,
             [e.currentTarget.id]: e.currentTarget.value
@@ -135,79 +141,133 @@ function Register() {
                 <div className="invalid-feedback">
                         { formError['existing'] }
                 </div>
+            <label for="firstname">
+                First Name:
+            </label>
             <input 
                     onChange={ handleInputChange }
                     value={ formData.firstname }
                     type="text"
                     name="firstname"
                     id="firstname"
-                    className="form-firstname"
+                    className="form-firstname register-input"
                     placeholder="First Name"
                 />
                 <div className="invalid-feedback">
                     { formError.firstname }
                 </div>
+                <label for="lastname">
+                Last Name:
+                </label>
                 <input 
                     onChange={ handleInputChange }
                     value={ formData.lastname }
                     type="text"
                     name="lastname"
                     id="lastname"
-                    className="form-lastname"
+                    className="form-lastname register-input"
                     placeholder="Last Name"
                 />
                 <div className="invalid-feedback">
                     { formError.lastname }
                 </div>
+                <label for="username">
+                    Username
+                </label>
                 <input 
                     onChange={ handleInputChange }
                     value={ formData.username }
                     type="text"
                     name="username"
                     id="username"
-                    className="form-username"
+                    className="form-username register-input"
                     placeholder="Username"
                 />  
                 <div className="invalid-feedback">
                     { formError.username }
                 </div>
+                <label for="email">
+                    Email:
+                </label>
                 <input 
                     onChange={ handleInputChange }
                     value={ formData.email }
                     type="email"
                     name="email"
                     id="email"
-                    className="form-email"
+                    className="form-email register-input"
                     placeholder="Email"
                 />  
                 <div className="invalid-feedback">
                     { formError.email }
                 </div>
+                <label for="password">
+                    Password:
+                </label>
                 <input 
                     onChange={ handleInputChange }
                     value={ formData.password }
                     type="password"
                     name="password"
                     id="password"
-                    className="form-password"
+                    className="form-password register-input"
                     placeholder="Password"
                 />
                 <div className="invalid-feedback">
                     { formError.password }
                 </div>
+                <label for="retype-password">
+                    Confirm Password
+                </label>
                 <input 
                     onChange={ handleInputChange }
                     value={ formData['retype-password'] }
                     type="password"
                     name="retype-password"
                     id="retype-password"
-                    className="form-retype-password"
+                    className="form-retype-password register-input"
                     placeholder="Retype Password"
                 />
+                <label for="address">
+                    Address:
+                </label>
+                <input 
+                    onChange={ handleInputChange }
+                    value={ formData.adress }
+                    type="text"
+                    name="address"
+                    id="address"
+                    className="form-adress register-input"
+                    placeholder="Adress"
+                /> 
+                <label for="imageUrl">
+                    Image:
+                </label>
+                <input 
+                    onChange={ handleInputChange }
+                    value={ formData.imageUrl }
+                    type="text"
+                    name="imageUrl"
+                    id="imageUrl"
+                    className="form-imageUrl register-input"
+                    placeholder="Image URL"
+                /> 
+                <label for="birthday">
+                    Birthday:
+                </label>
+                <input 
+                    onChange={ handleInputChange }
+                    value={ formData.birthday }
+                    type="text"
+                    name="birthday"
+                    id="birthday"
+                    className="form-birthday register-input"
+                    placeholder="Birthday"
+                /> 
                 <div className="invalid-feedback">
                     { formError['retype-password'] }
                 </div>
-                <button type="submit" className="submit-button">Register</button>
+                <button type="submit" className="submit-button" disabled={ !isDirty }>Register</button>
             </form>
             </div>
         </>

@@ -82,3 +82,57 @@ h1 {
 .hidden {
     display: none;
 }
+
+.comments {
+    padding: 10px;
+    border-bottom: 1px solid rgb(199, 199, 199);
+    background-color: rgb(238, 238, 238);
+}
+
+.com-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.but {
+    border: none;
+    background-color: transparent;
+    color: rgb(52, 76, 137);
+    padding: 5px;
+}
+
+.but:hover {
+    text-decoration: underline;
+}
+
+.add-new-comment {
+    width: 80%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid rgb(175, 175, 175);
+}
+
+.com-input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.com-user {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(18, 58, 102);
+}
+
+.context {
+    font-size: 14px;
+    margin: 2px;
+}
+
+.edit-elements {
+    display: flex;
+    align-items: center;
+    color: rgb(52, 76, 137);
+}
