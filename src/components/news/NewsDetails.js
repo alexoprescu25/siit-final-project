@@ -55,7 +55,6 @@ function NewsDetails() {
             const res = await axios('http://localhost:3002/news/' + newsId, {
                 method: 'DELETE'
             });
-            window.history.back();
         } catch(e) {
             console.log(e);
         }
@@ -68,7 +67,8 @@ function NewsDetails() {
             const res = await axios(`http://localhost:3002/comments`, {
                 method: 'POST',
                 data: qs.stringify(formData)
-            })
+            });
+            setTimeout(window.location.reload(), 400);
         } catch(e) {
             console.log(e);
         }

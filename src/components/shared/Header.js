@@ -1,5 +1,5 @@
-import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 
 import '../styles/Header.css';
 import AuthContext from '../auth/AuthContext';
@@ -9,6 +9,24 @@ function Header(z) {
 
     function handleClick() {
         document.querySelector('.page-content').classList.remove('hidden');
+    }
+
+    const [timeout, setTout] = useState(null);
+    const [search, setSearch] = useState('');
+    const history = useHistory();
+
+    function handleSearch(e) {
+        if(timeout) {
+            clearTimeout(timeout);
+            setTout(null);
+        }
+        const val = e.currentTarget.value;
+        setSearch(val);
+        redirect(val);
+    }
+
+    function redirect(val) {
+        history.push('/search?q=' + val);
     }
 
     function handleLogOut(e) {
@@ -39,6 +57,8 @@ function Header(z) {
                 <h1 className="title">BreakingNews</h1>
                 <div className="search-bar">
                     <input 
+                        onChange={ handleSearch }
+                        value={ search }
                         type="text"
                         className="search-input"
                         placeholder="Search News"

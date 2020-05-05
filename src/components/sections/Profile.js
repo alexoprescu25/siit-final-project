@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import '../styles/Profile.css';
 
@@ -16,6 +17,17 @@ function Profile() {
         getProfile();
     }, []);
 
+    async function handleDeleteAccount() {
+        const res = await axios(`http://localhost:3002/users/${userId}`, {
+            method: 'DELETE'
+        });
+        window.history.back();
+        localStorage.removeItem('token');
+        localStorage.removeItem('userId');
+        localStorage.removeItem('fullname');
+        localStorage.removeItem('firstname');
+    }
+
     return (
         <>
         <div className="profile-container">
@@ -24,6 +36,7 @@ function Profile() {
                 <h3 className="fullname"> { profile.firstname + profile.lastname } </h3>
                 <p className="profile-username"> { profile.username } </p>
                 <p className="adress"> { profile.adress } </p>  
+                <Link onClick={ handleDeleteAccount }> Delete my account </Link>
             </div>
         </div>
         </>

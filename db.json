@@ -3,15 +3,6 @@
     {
       "firstname": "Alexandru",
       "lastname": "Oprescu",
-      "username": "alexoprescu",
-      "email": "alexandru.oprescu@outlook.com",
-      "password": "asdes12",
-      "retype-password": "asdes12",
-      "id": 1
-    },
-    {
-      "firstname": "Alexandru",
-      "lastname": "Oprescu",
       "username": "alexoprescu25",
       "email": "alexandru.oprescu@outlook.com",
       "imageUrl": "https://images.pexels.com/photos/1138903/pexels-photo-1138903.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
@@ -20,18 +11,6 @@
       "password": "qwerty",
       "retype-password": "qwerty",
       "id": 2
-    },
-    {
-      "firstname": "Johnny",
-      "lastname": "English",
-      "username": "johnny",
-      "email": "johnny@yahoo.com",
-      "password": "parola",
-      "retype-password": "parola",
-      "imageUrl": "",
-      "address": "New York",
-      "birthday": "",
-      "id": 3
     }
   ],
   "news": [
@@ -359,7 +338,7 @@
       "url": "https://www.realitatea.net/stiri/actual/premierul-ludovic-orban-declaratiile-momentului-ora-2000-noi-masuri-in-apropierea-starii-de-alerta_5eb022eeb99379600b2e2edc",
       "urlToImage": "https://media.realitatea.net/multimedia/image/202004/full/orban_f31cbcf372.jpg",
       "publishedAt": "2020-05-04T18:41:15Z",
-      "content": "Declaraiile premierului:\r\nRomânia nu a fost pregtit pentru acest pericol. Nu am avut stocuri strategice de echipamente i medicamente. Izbucnirea epidemiei ne-a prins fr stocuri la medicamente, dispozitive. S-a fcut un efort uria. Am depit cu succes aceast cri… [+14149 chars]"
+      "content": "Declaraiile premierului:\nRomânia nu a fost pregtit pentru acest pericol. Nu am avut stocuri strategice de echipamente i medicamente. Izbucnirea epidemiei ne-a prins fr stocuri la medicamente, dispozitive. S-a fcut un efort uria. Am depit cu succes aceast cri…"
     },
     {
       "id": 31,
@@ -370,7 +349,7 @@
       "url": "https://stirileprotv.ro/stiri/politic/ludovic-orban-va-sustine-o-decalaratie-de-presa-la-ora-20-00-la-palatul-victoria.html",
       "urlToImage": "https://image.stirileprotv.ro/media/images/1408x882/Apr2020/62118279.jpg",
       "publishedAt": "2020-05-04T18:06:25Z",
-      "content": "Prim-ministrul Ludovic Orban a susinut o conferin de pres la Palatul Victoria în care a prezentat raportul privind activitatea Guvernului în lupta cu noul coronavirus.\r\nSinteza declarațiilor susținute de Ludovic Orban:\r\n- România nu a fost pregătită pentru ac… [+5248 chars]"
+      "content": "Prim-ministrul Ludovic Orban a susinut o conferin de pres la Palatul Victoria în care a prezentat raportul privind activitatea Guvernului în lupta cu noul coronavirus.\nSinteza declarațiilor susținute de Ludovic Orban:\n- România nu a fost pregătită pentru ac…"
     },
     {
       "id": 32,
@@ -392,7 +371,7 @@
       "url": "https://www.mediafax.ro/social/coronavirus-in-romania-live-update-4-mai-peste-5-000-de-persoane-au-fost-declarate-vindecate-am-ajuns-la-818-morti-situatia-in-diaspora-19113238",
       "urlToImage": "https://storage0.dms.mpinteractiv.ro/media/1/1/1688/19113238/25/7559471-mediafax-foto-dani-amariei.jpg?width=640",
       "publishedAt": "2020-05-04T16:40:47Z",
-      "content": "UPDATE ora 19.19 Noi decese din cauza Covid-19 în România. Bilanul ajunge la 818\r\nDeces 804\r\n Brbat, 72 ani, municipiul Bucureti \r\n Data internrii: 09.04.2020 Spitalul Victor Babe, febra, semne si simptome respiratorii i imagistica pulmonara modificata, este … [+12091 chars]"
+      "content": "UPDATE ora 19.19 Noi decese din cauza Covid-19 în România. Bilanul ajunge la 818\nDeces 804\n Brbat, 72 ani, municipiul Bucureti \n Data internrii: 09.04.2020 Spitalul Victor Babe, febra, semne si simptome respiratorii i imagistica pulmonara modificata, este … "
     },
     {
       "id": 34,

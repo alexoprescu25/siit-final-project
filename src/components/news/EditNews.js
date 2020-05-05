@@ -17,7 +17,8 @@ function EditNews() {
                 method: 'PATCH',
                 data: qs.stringify({
                     'title': news.title,
-                    'content': news.content
+                    'content': news.content,
+                    'urlToImage': news.urlToImage
                 })
             });
             setTimeout(window.history.back(), 300);
@@ -51,31 +52,51 @@ function EditNews() {
     } else {
     return (
         <>
-        <div className="edit-form">
-                <form onSubmit={ handleSubmit }>
-                <div className="edit-inputs">
-                    <h1> { news.title } </h1>
-                    <input 
-                        onChange={ handleInputChange }
-                        value={ news.title }
-                        type="text"
-                        id="title"
-                        name="title"
-                        className="edit-form-title"
-                    />
-                    <textarea
-                        onChange={ handleInputChange }
-                        value={ news.content }
-                        name="content"
-                        id="content"
-                        className="edit-form-content"
-                    >
 
-                    </textarea>
+        <div className="details">
+            <div className="news-details">
+                <form onSubmit={ handleSubmit }>
+                <div>
+                    <h1> 
+                        { news.title } 
+                    </h1>
+                    <input 
+                            onChange={ handleInputChange }
+                            value={ news.title }
+                            type="text"
+                            id="title"
+                            name="title"
+                            className="edit-form-title"
+                    />
+                    <div className="edit">
                     </div>
-                    <button className="save-button">Save</button>
+                    <div className="bar">
+                        <div className="author">
+                            { news.author ? news.author : 'Breaking News'}
+                        </div>
+                    </div>
+                    <img src={ news.urlToImage } alt="image" className="article-image" />
+                    <input 
+                            onChange={ handleInputChange }
+                            value={ news.urlToImage }
+                            type="text"
+                            id="urlToImage"
+                            name="urlToImage"
+                            className="edit-form-image"
+                    />
+                    <p className="content"> { news.content } </p>
+                    <textarea
+                            onChange={ handleInputChange }
+                            value={ news.content }
+                            name="content"
+                            id="content"
+                            className="edit-form-content"
+                    ></textarea>
+                </div>
+                <button className="save-button">Save</button>
                 </form>
-        </div>
+                </div>
+                </div> 
         </>
     );
     }

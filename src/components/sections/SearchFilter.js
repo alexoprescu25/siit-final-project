@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import '../styles/NewsCard.css';
+import '../styles/NewsList.css';
 
     function SearchFilter() {
   
@@ -12,7 +12,7 @@ import '../styles/NewsCard.css';
 
         const filteredData = data.filter(item => {
             return item.title.toLowerCase().includes(lowercasedFilter);
-        }) 
+        })
 
         function handleInputChange(e) { 
             setFilter(e.currentTarget.value);
@@ -38,7 +38,7 @@ import '../styles/NewsCard.css';
               placeholder="Search News"
           />
           <nav className="box">
-            <div>
+            <div className="container">
               {filteredData.map(item => (
                 <div key={item.id}>
                   <div className="container">
