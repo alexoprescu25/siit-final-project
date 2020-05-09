@@ -540,22 +540,6 @@
     }
   ],
   "comments": [
-    {
-      "id": 2,
-      "newsId": 3,
-      "comm": "Oh, yes!"
-    },
-    {
-      "user": "Alexandru Oprescu",
-      "newsId": "2",
-      "comm": "A really good article",
-      "id": 3
-    },
-    {
-      "user": "Johnny English",
-      "newsId": "2",
-      "comm": "I don't think so",
-      "id": 5
-    }
+    
   ]
 }
