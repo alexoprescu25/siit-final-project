@@ -71,7 +71,7 @@ function AddNews() {
                 setSuccessMessage('Your article was added!');
             } catch(e) {
                 console.log(e);
-                setErrorMessage('Ups! There was an error!');
+                setErrorMessage('There was an error! Please try again!');
             }
         }
     }
