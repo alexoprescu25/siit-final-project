@@ -28,8 +28,12 @@
     justify-self: flex-end;
 }
 
-.article a:hover {
+.read-more:hover {
     text-decoration: underline;
+}
+
+.news-title:hover {
+    color: rgb(187, 25, 25);
 }
 
 .box {

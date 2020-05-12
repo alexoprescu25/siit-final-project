@@ -1,32 +1,13 @@
-import React, { useContext, useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 
 import '../styles/Header.css';
 import AuthContext from '../auth/AuthContext';
-import SearchFilter from '../sections/SearchFilter';
 
-function Header(z) {
+function Header() {
 
     function handleClick() {
-        document.querySelector('.page-content').classList.remove('hidden');
-    }
-
-    const [timeout, setTout] = useState(null);
-    const [search, setSearch] = useState('');
-    const history = useHistory();
-
-    function handleSearch(e) {
-        if(timeout) {
-            clearTimeout(timeout);
-            setTout(null);
-        }
-        const val = e.currentTarget.value;
-        setSearch(val);
-        redirect(val);
-    }
-
-    function redirect(val) {
-        history.push('/search?q=' + val);
+        document.getElementById("page-content").style.width = "200px";
     }
 
     function handleLogOut(e) {
@@ -55,19 +36,6 @@ function Header(z) {
         <nav className="site-navigation">
             <div className="top-links">
                 <h1 className="title">BreakingNews</h1>
-                <div className="search-bar">
-                    <input 
-                        onChange={ handleSearch }
-                        value={ search }
-                        type="text"
-                        className="search-input"
-                        placeholder="Search News"
-                    />
-                    <svg className="bi bi-search" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"/>
-                        <path d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"/>
-                    </svg>
-                </div>
                 <div className="list-icons">
                     <button onClick={ displayAuth } className="list-btn">
                         <svg className="bi bi-list" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

@@ -8,6 +8,18 @@
     grid-template-columns: 350px;
 }
 
+.search-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.bi-search {
+    position: relative;
+    right: 30px;
+}
+
 @media screen and (min-width: 800px) {
     .align {
         display: flex;

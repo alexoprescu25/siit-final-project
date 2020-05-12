@@ -1,17 +1,16 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import  '../styles/Register.css';
 import axios from 'axios';
 import qs from 'qs';
-import AuthContext from './AuthContext';
 
 const errorMessages = {
-    'firstname': '*Please enter your first name!',
-    'lastname': '*Please enter your last name!',
-    'username': '*Please enter your username!',
-    'email': '*Please enter a valid email address!',
-    'password': '*You must enter your password!',
-    'retype-password': '*You must retype your password!',
-    'different-passwords': '*You must enter same password twice!',
+    'firstname': 'Please enter your first name!',
+    'lastname': 'Please enter your last name!',
+    'username': 'Please enter a valid username!',
+    'email': 'Please enter a valid email address!',
+    'password': 'Please enter a valid password!',
+    'retype-password': 'You must retype your password!',
+    'different-passwords': 'Please make sure your passwords match!',
     'existing': ' already existing!'
 }
 
@@ -44,8 +43,6 @@ function Register() {
     const [globalSuccessMessage, setSuccessMessage] = useState('');
     const [isDirty, setDirty] = useState(false);
 
-    const { setToken } = useContext(AuthContext);
-
     async function handleSubmit(e) {
         e.preventDefault();
 
@@ -57,10 +54,8 @@ function Register() {
                     method: 'POST',
                     data: qs.stringify(formData),
                 });
-                setToken(formData.username);
-                localStorage.setItem('token', formData.username);
                 setSuccessMessage('Your username was created!');
-                console.log(res);
+                setTimeout( () => { window.location.assign("/login") }, 1000 );
             } catch(e) {
                 console.log(e);
                 setErrorMessage('Your username was not created!');
@@ -141,7 +136,7 @@ function Register() {
                 <div className="invalid-feedback">
                         { formError['existing'] }
                 </div>
-            <label for="firstname">
+            <label htmlFor="firstname">
                 First Name:
             </label>
             <input 
@@ -156,7 +151,7 @@ function Register() {
                 <div className="invalid-feedback">
                     { formError.firstname }
                 </div>
-                <label for="lastname">
+                <label htmlFor="lastname">
                 Last Name:
                 </label>
                 <input 
@@ -171,7 +166,7 @@ function Register() {
                 <div className="invalid-feedback">
                     { formError.lastname }
                 </div>
-                <label for="username">
+                <label htmlFor="username">
                     Username
                 </label>
                 <input 
@@ -186,7 +181,7 @@ function Register() {
                 <div className="invalid-feedback">
                     { formError.username }
                 </div>
-                <label for="email">
+                <label htmlFor="email">
                     Email:
                 </label>
                 <input 
@@ -201,7 +196,7 @@ function Register() {
                 <div className="invalid-feedback">
                     { formError.email }
                 </div>
-                <label for="password">
+                <label htmlFor="password">
                     Password:
                 </label>
                 <input 
@@ -216,7 +211,7 @@ function Register() {
                 <div className="invalid-feedback">
                     { formError.password }
                 </div>
-                <label for="retype-password">
+                <label htmlFor="retype-password">
                     Confirm Password
                 </label>
                 <input 
@@ -228,7 +223,7 @@ function Register() {
                     className="form-retype-password register-input"
                     placeholder="Retype Password"
                 />
-                <label for="address">
+                <label htmlFor="address">
                     Address:
                 </label>
                 <input 
@@ -240,7 +235,7 @@ function Register() {
                     className="form-adress register-input"
                     placeholder="Adress"
                 /> 
-                <label for="imageUrl">
+                <label htmlFor="imageUrl">
                     Image:
                 </label>
                 <input 
@@ -252,13 +247,13 @@ function Register() {
                     className="form-imageUrl register-input"
                     placeholder="Image URL"
                 /> 
-                <label for="birthday">
+                <label htmlFor="birthday">
                     Birthday:
                 </label>
                 <input 
                     onChange={ handleInputChange }
                     value={ formData.birthday }
-                    type="text"
+                    type="date"
                     name="birthday"
                     id="birthday"
                     className="form-birthday register-input"

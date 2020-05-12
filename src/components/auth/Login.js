@@ -44,8 +44,8 @@ function Login() {
                         localStorage.setItem('userId', db[i]['id']);
                         localStorage.setItem('fullname', db[i]['firstname'] + ' ' + db[i]['lastname']);
                         localStorage.setItem('firstname', db[i]['firstname']);
-                        setTimeout(function() {
-                            window.history.back();
+                        setTimeout(() => {
+                            window.location.assign("/home");
                         }, 1000);
                     }
                 }
@@ -129,15 +129,6 @@ function Login() {
                     />
                     <div className="invalid-feedback">
                         { formError.password }
-                    </div>
-                    <div>
-                    <input 
-                        type="checkbox"
-                        id="checkbox"
-                        name="checkbox"
-                        className="form-checkbox"
-                    />
-                    <label htmlFor="checkbox"> Remember me</label>
                     </div>
                     <div className="create-account">
                         <p>Not registered? </p>

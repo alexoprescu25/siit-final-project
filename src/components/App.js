@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 import Header from './shared/Header';
 import Login from './auth/Login';
@@ -13,6 +13,7 @@ import PrivateRoute from './auth/PrivateRoute';
 import AddNews from './news/AddNews';
 import Profile from './sections/Profile';
 import SearchFilter from './sections/SearchFilter';
+import EditComment from './news/EditComment';
 
 function App() {
 
@@ -70,6 +71,9 @@ function App() {
             </PrivateRoute>
             <PrivateRoute exact path="/profile">
                 <Profile />
+            </PrivateRoute>
+            <PrivateRoute exact path="/comments/editcomment/:commId">
+                <EditComment />
             </PrivateRoute>
 
         </BrowserRouter>

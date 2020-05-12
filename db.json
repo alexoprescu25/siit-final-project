@@ -5,8 +5,8 @@
       "lastname": "Oprescu",
       "username": "alexoprescu25",
       "email": "alexandru.oprescu@outlook.com",
-      "imageUrl": "https://images.pexels.com/photos/1138903/pexels-photo-1138903.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
-      "adress": "Str. Lunga 91, Brasov, Romania",
+      "imageUrl": "https://images.pexels.com/photos/716411/pexels-photo-716411.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "adress": "Brasov, Romania",
       "birthday": "",
       "password": "qwerty",
       "retype-password": "qwerty",
@@ -66,17 +66,6 @@
       "url": "https://www.wsj.com/video/fistbumps-and-clear-visors-holding-an-election-during-a-pandemic/EC047D26-7E8E-4353-B780-6975090D29D3.html",
       "urlToImage": "http://m.wsj.net/video/20200416/skelect0416/skelect0416_1280x720.jpg",
       "publishedAt": "2020-04-16T09:32:35Z",
-      "content": "WSJs House of the Year: A Contemporary Home With Hawaiian Spirit \r\n1/30/2020A modern, 7,500 square-foot home connects owner Elizabeth Grossman to the nature and spiritual vortex that drew her to Lanikai, a neighborhood on Oahu. She gives us a tour, and explai…"
-    },
-    {
-      "id": 7,
-      "author": null,
-      "category": "business",
-      "title": "Why Congress Can’t Move Quickly to Approve More Small-Business Loans",
-      "description": "The small-business loan program designed to support businesses hit by the pandemic is expected to run out of money soon. WSJ’s Gerald F. Seib explains the forces keeping Congress from fixing that problem now. Photo: Josh Edelson/AFP via Getty Images",
-      "url": "https://www.wsj.com/video/why-congress-cant-move-quickly-to-approve-more-small-business-loans/C91001FD-8405-4B0B-8CC8-1155DDCBEAF9.html",
-      "urlToImage": "http://m.wsj.net/video/20200415/041520seibsecondaid/041520seibsecondaid_1280x720.jpg",
-      "publishedAt": "2020-04-16T09:30:00Z",
       "content": "WSJs House of the Year: A Contemporary Home With Hawaiian Spirit \r\n1/30/2020A modern, 7,500 square-foot home connects owner Elizabeth Grossman to the nature and spiritual vortex that drew her to Lanikai, a neighborhood on Oahu. She gives us a tour, and explai…"
     },
     {
@@ -264,17 +253,6 @@
       "content": "The UK’s data protection watchdog confirmed today the government still hasn’t given it sight of a key legal document attached to the coronavirus contacts tracing app which is being developed by the NHSX, the digital transformation branch of the country’s Nati… [+14060 chars]"
     },
     {
-      "id": 24,
-      "author": "Frederic Lardinois",
-      "title": "AWS launches the $995 Elemental Link for streaming video to its cloud",
-      "description": "AWS today announced the launch of the Elemental Link, a small hardware device that makes it easy to connect a live video source to the AWS Elemental Media Live service for broadcast-grade live video processing in the cloud. The $995 Link, which weighs in at l…",
-      "url": "https://techcrunch.com/2020/05/04/aws-launches-the-995-elemental-link-for-streaming-video-to-its-cloud/",
-      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/05/Link_image_v2.c9114842c9b27345bb2080ebe195c2cf15810cfd.png?w=718",
-      "publishedAt": "2020-05-04T18:07:06Z",
-      "category": "tech",
-      "content": "AWS today announced the launch of the Elemental Link, a small hardware device that makes it easy to connect a live video source to the AWS Elemental Media Live service for broadcast-grade live video processing in the cloud. The $995 Link, which weighs in at l… [+1948 chars]"
-    },
-    {
       "id": 25,
       "author": "Kirsten Korosec",
       "title": "Uber subsidiary Careem to slash workforce by 31%, suspends bus transport app",
@@ -317,17 +295,6 @@
       "publishedAt": "2020-05-04T17:48:55Z",
       "category": "tech",
       "content": "As expected, Robinhood has closed a new round of capital. The late-stage, consumer investing app announced today that it has closed a $280 million Series F funding at an $8.3 billion valuation. This closely tracks prior coverage that the firm was hunting for … [+4865 chars]"
-    },
-    {
-      "id": 29,
-      "author": "Darrell Etherington",
-      "title": "NWU researchers develop a throat-worn wearable that could offer early warnings for COVID-19 patients",
-      "description": "The ongoing COVID-19 pandemic is resulting in big shifts across industries, but the development of more long-term solutions that address a future in which what we need to do is mitigate the impact of the new coronavirus seems like a worthwhile place to invest…",
-      "url": "https://techcrunch.com/2020/05/04/nwu-researchers-develop-a-throat-worn-wearable-that-could-offer-early-warnings-for-covid-19-patients/",
-      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/05/wearable-covid.jpg?w=711",
-      "publishedAt": "2020-05-04T17:34:34Z",
-      "category": "tech",
-      "content": "The ongoing COVID-19 pandemic is resulting in big shifts across industries, but the development of more long-term solutions that address a future in which what we need to do is mitigate the impact of the new coronavirus seems like a worthwhile place to invest… [+3370 chars]"
     },
     {
       "id": 30,
@@ -537,25 +504,216 @@
       "urlToImage": "https://storage0.dms.mpinteractiv.ro/media/1/1481/21335/19101035/1/andras-malmos-5bumkm5e08u-unsplash.jpg?width=600",
       "publishedAt": "2020-05-04T06:30:28Z",
       "content": "Grupul polonez Amrest, prezent pe piaa local cu reeaua de cafenele Starbucks i începând din acest an cu lanul de restaurante Burger King, anun c a deschis o unitate în Piaa Universitii din Capital, care va deservi pentru început doar serviciile de tip food de…"
+    },
+    {
+      "id": 49,
+      "category": "science",
+      "author": "Peter Dockrill",
+      "title": "A Giant Piece of a Chinese Rocket Just Smashed Down to Earth in an Uncontrolled Fall - ScienceAlert",
+      "description": "The remains of a giant segment of a Chinese rocket crash-landed in the Atlantic Ocean this week, representing the most significant uncontrolled descent of a piece of human-made space debris in decades.",
+      "url": "https://www.sciencealert.com/uncontrolled-descent-of-chinese-rocket-represents-largest-fall-from-orbit-in-decades",
+      "urlToImage": "https://www.sciencealert.com/images/2020-05/processed/010-uncontrolled-descent_1024.jpg",
+      "publishedAt": "2020-05-12T06:22:08Z",
+      "content": "The remains of a giant segment of a Chinese rocket crash-landed in the Atlantic Ocean this week, representing the most significant uncontrolled descent of a piece of human-made space debris in decades.\r\nThe core stage of a Chinese Long March 5B (CZ5B) rocket,… [+2855 chars]"
+    },
+    {
+      "id": 50,
+      "category": "science",
+      "author": null,
+      "title": "Coronavirus shut-downs pose huge threat to Australian research jobs - Nature.com",
+      "description": "Report warns that thousands of scientists will also have to abandon research projects.",
+      "url": "https://www.nature.com/articles/d41586-020-01407-4",
+      "urlToImage": "https://media.nature.com/lw1024/magazine-assets/d41586-020-01407-4/d41586-020-01407-4_17969834.jpg",
+      "publishedAt": "2020-05-12T02:04:07Z",
+      "content": "Science organizations warn that thousands of researchers could lose their jobs in the wake of coronavirus shutdowns.Credit: Carla Gottgens/Bloomberg/Getty\r\nResearch in Australia will face drastic cuts in funding and jobs as a consequence of the COVID-19 pande… [+2271 chars]"
+    },
+    {
+      "id": 51,
+      "category": "science",
+      "author": "Brian Linder | blinder@pennlive.com",
+      "title": "Keep an eye on the sky before sunrise as Comet SWAN nears: report - PennLive",
+      "description": "It will be closest to Earth on May 13.",
+      "url": "https://www.pennlive.com/daily-buzz/2020/05/keep-an-eye-on-the-sky-before-sunrise-as-comet-swan-nears-report.html",
+      "urlToImage": "https://www.pennlive.com/resizer/ii8uNOk4vJPjNAeisX-owzv3FMk=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/MHOMGS4MKVFL3IGWVEN2VL27QQ.JPG",
+      "publishedAt": "2020-05-12T00:53:15Z",
+      "content": "Want to see something cool?\r\nJust check out the sky starting Wednesday because, according to a Better Homes and Gardens story, Comet SWAN will be visible in the night sky.\r\nWell, make that the early morning sky, because according to the article the best time … [+524 chars]"
+    },
+    {
+      "id": 52,
+      "category": "science",
+      "author": "Emily Schuitema",
+      "title": "Watching the Skies: Moon passes 3 planets - WOODTV.com",
+      "description": "If you don’t mind the cold and want to head outside before sunrise, you’ll be treated to a neat view of the moon and three morning planets.",
+      "url": "https://www.woodtv.com/weather/watching-the-skies-moon-passes-3-planets-2/",
+      "urlToImage": "https://www.woodtv.com/wp-content/uploads/sites/51/2020/05/This-Week-Sky-Planets-and-Moon-copy.jpg?w=864&h=486&crop=1&resize=1280,720",
+      "publishedAt": "2020-05-11T23:25:00Z",
+      "content": "GRAND RAPIDS, Mich. (WOOD) There are some cool nights ahead this week, but there are also clear skies in the forecast. If you don’t mind the cold and want to head outside before sunrise, you’ll be treated to a neat view of the moon and three morning planets.\r… [+1004 chars]"
+    },
+    {
+      "id": 53,
+      "category": "science",
+      "author": "Passant Rabie",
+      "title": "New study wants astronauts to use their pee to build a lunar base - Inverse",
+      "description": "A team of scientists suggest using urine to make concrete on the Moon in order to build a lunar base with readily available resources.",
+      "url": "https://www.inverse.com/science/astronaut-pee-concrete",
+      "urlToImage": "https://imgix.bustle.com/uploads/image/2020/5/11/8d8c8c5e-acc3-4281-95da-a10f6949bfb2-as11-40-5961hr.jpg?w=1200&h=630&q=70&fit=crop&crop=faces&fm=jpg",
+      "publishedAt": "2020-05-11T23:18:29Z",
+      "content": "It's been more than 50 years since we first landed on the Moon, and humanity is planning a return to the lunar surface pretty soon with NASA's upcoming Artemis mission.\r\nAs NASA has repeatedly pointed out when discussing the return to the Moon, this time the … [+4871 chars]"
+    },
+    {
+      "id": 54,
+      "category": "science",
+      "author": "Zachariah Bryan",
+      "title": "What was the boom heard around Puget... - Bothell-Kenmore Reporter",
+      "description": "<p>Residents on both sides of the water reported hearing the big bang. </p>",
+      "url": "https://www.bothell-reporter.com/news/what-was-the-boom-heard-around-puget-sound/",
+      "urlToImage": "https://www.bothell-reporter.com/wp-content/uploads/2020/05/21491425_web1_TSR-Meteor-200507.jpg",
+      "publishedAt": "2020-05-11T22:35:38Z",
+      "content": "It was the sound heard all around Puget Sound.\r\nOr, as Mountlake Terrace resident David Carlos named it, “The Quarantine Boom of 2020.”\r\nLikely, it was a meteor’s sonic boom that sent vibrations through the region shortly after 7 p.m. May 6, scientists said.\r… [+5169 chars]"
+    },
+    {
+      "id": 55,
+      "category": "science",
+      "author": "Tariq Malik",
+      "title": "Cygnus cargo ship leaves space station for free-flying fire mission - Space.com",
+      "description": "It will fall back to Earth on May 29, NASA says.",
+      "url": "https://www.space.com/cygnus-ng-13-cargo-ship-leaves-space-station.html",
+      "urlToImage": "https://cdn.mos.cms.futurecdn.net/c7vcTXqMPxwSQYhayhN8sT-1200-80.jpg",
+      "publishedAt": "2020-05-11T22:25:00Z",
+      "content": "A robotic Cygnus cargo ship cast off from the International Space Station on Monday (May 11) to begin a brief, new life as a fire lab in orbit.\r\nThe Cygnus NG-13 spacecraft, which delivered tons of supplies to the station in February, was released by the spac… [+3581 chars]"
+    },
+    {
+      "id": 56,
+      "category": "science",
+      "author": "Sarmad Burki",
+      "title": "Google Adds A Way For People to Support Local Businesses: Links For Donations and Gift Cards Attached To Business Profiles - Appuals",
+      "description": "While the COVID-19 spread has wreaked havoc over the entire planet, we see that the world economy has shrunk tremendously. This has had an impact on both huge corporations and smaller merchants. While",
+      "url": "https://appuals.com/google-adds-support-links/",
+      "urlToImage": "//cdn.appuals.com/wp-content/uploads/2020/05/Screenshot-2020-05-12-at-1.01.49-AM.png",
+      "publishedAt": "2020-05-11T20:43:05Z",
+      "content": "While the COVID-19 spread has wreaked havoc over the entire planet, we see that the world economy has shrunk tremendously. This has had an impact on both huge corporations and smaller merchants. While online shopping and e-commerce are being utilized to the m… [+1763 chars]"
+    },
+    {
+      "id": 57,
+      "category": "science",
+      "author": "Mindy Weisberger",
+      "title": "Ice Age giant sloths died in a pit of their own poop - Livescience.com",
+      "description": "The animals may have been sickened after feces contaminated their watering hole",
+      "url": "https://www.livescience.com/giant-sloths-died-in-poop-pit.html",
+      "urlToImage": "https://cdn.mos.cms.futurecdn.net/baEirARFpLox9uiee5B3mM-1200-80.jpg",
+      "publishedAt": "2020-05-11T20:12:00Z",
+      "content": "During the Ice Age, a group of giant ground sloths\r\n died together after swallowing their own feces in a contaminated pool of shallow water.\r\nScientists discovered the bones of nearly two dozen ground sloths (Eremotherium laurillardi) in a pit at a fossil-ric… [+3817 chars]"
+    },
+    {
+      "id": 58,
+      "category": "science",
+      "author": "Mick Kulikowski",
+      "title": "Bumble bee disease, reproduction shaped by flowering strip plants - Phys.org",
+      "description": "Flowering strips—pollinator-friendly rows of plants that increase foraging habitat for bees—can help offset pollinator decline but may also bring risks of higher pathogen infection rates for pollinators foraging in those strips.",
+      "url": "https://phys.org/news/2020-05-bumble-bee-disease-reproduction.html",
+      "urlToImage": "https://scx2.b-cdn.net/gfx/news/hires/2020/bumblebeedis.jpg",
+      "publishedAt": "2020-05-11T19:11:18Z",
+      "content": "Flowering stripspollinator-friendly rows of plants that increase foraging habitat for beescan help offset pollinator decline but may also bring risks of higher pathogen infection rates for pollinators foraging in those strips.\r\nResearchers from North Carolina… [+3777 chars]"
+    },
+    {
+      "id": 59,
+      "category": "science",
+      "author": "Science X staff",
+      "title": "How to boost plant biomass: Biologists uncover molecular link between nutrient availability, growth - Phys.org",
+      "description": "Plant scientists have long known that crop yield is proportional to the dose of nitrogen fertilizer, but the increased use of fertilizers is costly and harmful to the environment. Until now, the underlying mechanisms by which plants adjust their growth accord…",
+      "url": "https://phys.org/news/2020-05-boost-biomass-biologists-uncover-molecular.html",
+      "urlToImage": "https://scx2.b-cdn.net/gfx/news/2020/howtoboostpl.jpg",
+      "publishedAt": "2020-05-11T19:11:14Z",
+      "content": "Plant scientists have long known that crop yield is proportional to the dose of nitrogen fertilizer, but the increased use of fertilizers is costly and harmful to the environment. Until now, the underlying mechanisms by which plants adjust their growth accord… [+3358 chars]"
+    },
+    {
+      "id": 60,
+      "category": "science",
+      "author": "Science X staff",
+      "title": "Scientists model Mars climate to understand habitability - Phys.org",
+      "description": "A Southwest Research Institute scientist modeled the atmosphere of Mars to help determine that salty pockets of water present on the Red Planet are likely not habitable by life as we know it on Earth. A team that also included scientists from Universities Spa…",
+      "url": "https://phys.org/news/2020-05-scientists-mars-climate-habitability.html",
+      "urlToImage": "https://scx2.b-cdn.net/gfx/news/hires/2020/swriscientis.jpg",
+      "publishedAt": "2020-05-11T18:44:34Z",
+      "content": "A Southwest Research Institute scientist modeled the atmosphere of Mars to help determine that salty pockets of water present on the Red Planet are likely not habitable by life as we know it on Earth. A team that also included scientists from Universities Spa… [+2804 chars]"
+    },
+    {
+      "id": 61,
+      "category": "science",
+      "author": "Ryan F. Mandelbaum",
+      "title": "Lava Lake Is Now Water Lake Atop Kilauea Volcano - Gizmodo",
+      "description": "Satellite images have captured the result of a lake of lava collapsing on Hawaii’s Kilauea volcano, revealing an enormous new lake of water.",
+      "url": "https://gizmodo.com/lava-lake-is-now-water-lake-atop-kilauea-volcano-1843394005",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/nxfl5ty5qfkpdouhfrts.jpg",
+      "publishedAt": "2020-05-11T18:41:25Z",
+      "content": "Satellite images have captured the result of a lake of lava collapsing on Hawaiis Kilauea volcano, revealing an enormous new lake of water.\r\nThenew lake formed as a result of the caldera, a crater called Halemaumau, collapsing at Kilaueas peak. Now that the c… [+1628 chars]"
+    },
+    {
+      "id": 62,
+      "category": "science",
+      "author": "Science X staff",
+      "title": "El Nino-linked decreases in soil moisture could trigger massive tropical-plant die offs - Phys.org",
+      "description": "New research has found that El Niño events are often associated with droughts in some of the world's more vulnerable tropical regions. Associated with warmer than average ocean temperatures in the eastern Pacific, El Niños can in turn influence global weather…",
+      "url": "https://phys.org/news/2020-05-el-nino-linked-decreases-soil-moisture.html",
+      "urlToImage": "https://scx2.b-cdn.net/gfx/news/2020/elniamp241ol.jpg",
+      "publishedAt": "2020-05-11T18:33:13Z",
+      "content": "New research has found that El Niño events are often associated with droughts in some of the world's more vulnerable tropical regions. Associated with warmer than average ocean temperatures in the eastern Pacific, El Niños can in turn influence global weather… [+3760 chars]"
+    },
+    {
+      "id": 63,
+      "category": "science",
+      "author": "Loren Grush",
+      "title": "SpaceX consultant on creating a new crewed spacecraft: ‘We were really the underdogs’ - The Verge",
+      "description": "Garrett Reisman gives The Verge a behind-the-scenes look at what it took to develop SpaceX’s Crew Dragon for NASA’s Commercial Crew Program and what it will be like to watch his friends, NASA astronauts Bob Behnken and Doug Hurley, fly on the vehicle he helpe…",
+      "url": "https://www.theverge.com/2020/5/11/21254316/nasa-spacex-astronaut-garrett-reisman-crew-dragon-historic-launch",
+      "urlToImage": "https://cdn.vox-cdn.com/thumbor/PAD3_zOyzJ8f5qGJSWSi-TqRzD8=/0x154:1920x1159/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/19958220/s132e008223_large.jpg",
+      "publishedAt": "2020-05-11T18:02:02Z",
+      "content": "SpaceXs upcoming crewed launch will be really intense for Garrett Reisman\r\nFor former NASA astronaut Garret Reisman, SpaceXs May 27 launch of the companys first human passengers to space is going to be a very personal moment. Reisman worked at SpaceX for year… [+11964 chars]"
+    },
+    {
+      "id": 64,
+      "category": "science",
+      "author": "Evan Gough",
+      "title": "Dynamic orbital slingshot: A cool idea to catch up with an interstellar visitor - Phys.org",
+      "description": "Poor, dim-witted humanity.",
+      "url": "https://phys.org/news/2020-05-dynamic-orbital-slingshot-cool-idea.html",
+      "urlToImage": "https://scx2.b-cdn.net/gfx/news/2020/acoolideatoc.jpg",
+      "publishedAt": "2020-05-11T16:53:49Z",
+      "content": "Poor, dim-witted humanity.\r\nWe used to think we were the center of everything. That wasn't long ago, and even though we've made tremendous advancements in our understanding of our situation here in space, we still have huge blind spots.\r\nFor one, we're only n… [+7668 chars]"
+    },
+    {
+      "id": 65,
+      "category": "science",
+      "author": null,
+      "title": "Japanese Hayabusa2 Spacecraft Reveals More Secrets From Asteroid Ryugu - SciTechDaily",
+      "description": "Ryugu’s interaction with the sun changes what we know about asteroid history. In February and July of 2019, the Hayabusa2 spacecraft briefly touched down on the surface of near-Earth asteroid Ryugu. The readings it took with various instruments at those times…",
+      "url": "https://scitechdaily.com/?p=82425/",
+      "urlToImage": "https://scitechdaily.com/images/Ryugu-History.jpg",
+      "publishedAt": "2020-05-11T15:52:20Z",
+      "content": "False color map of the surface of Ryugu with craters marked by circles. Credit: © 2020 Morota et al.\r\nRyugu’s interaction with the sun changes what we know about asteroid history.\r\nIn February and July of 2019, the Hayabusa2 spacecraft briefly touched down on… [+5169 chars]"
+    },
+    {
+      "id": 66,
+      "category": "science",
+      "author": "Hannah Cloke",
+      "title": "As sea levels rise, are we ready to live behind giant walls? - The Conversation UK",
+      "description": "A new study suggests raising dykes along a third of Europe's coastline, but there are more cost-effective options.",
+      "url": "https://theconversation.com/as-sea-levels-rise-are-we-ready-to-live-behind-giant-walls-137976",
+      "urlToImage": "https://images.theconversation.com/files/333406/original/file-20200507-49569-1c5yq4r.jpg?ixlib=rb-1.1.0&rect=0%2C220%2C5272%2C2636&q=45&auto=format&w=1356&h=668&fit=crop",
+      "publishedAt": "2020-05-11T15:52:00Z",
+      "content": "Climate change, its fair to say, is complicated. And its big. One of the main challenges of responding effectively is simply getting your head around the scale of the problem.\r\nThis is not unique in the study of the physical world, of course. Scientists and e… [+4513 chars]"
+    },
+    {
+      "id": 68,
+      "category": "science",
+      "author": "Kelsey Weekman",
+      "title": "These are the best photos of Earth ever taken from space - Yahoo Lifestyle",
+      "description": "NASA asked the public to vote on the best images of Earth.",
+      "url": "https://www.yahoo.com/lifestyle/2020-05-11-these-are-the-best-photos-of-earth-ever-taken-from-space-24270877.html",
+      "urlToImage": "https://s.yimg.com/ny/api/res/1.2/HZo_X2kXTd.SCz0Q4d0b2w--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyODA7aD04NDAuNDY2OTI2MDcwMDM4OQ--/https://s.yimg.com/uu/api/res/1.2/wlBTyMr1vMEaXjDblznS.w--~B/aD02NzU7dz0xMDI4O3NtPTE7YXBwaWQ9eXRhY2h5b24-/https://o.aolcdn.com/images/dims3/GLOB/legacy_thumbnail/1028x675/format/jpg/quality/85/https://s.yimg.com/os/creatr-uploaded-images/2020-05/adcfd660-9399-11ea-9fff-d649b90dd2a6",
+      "publishedAt": "2020-05-11T15:16:00Z",
+      "content": "In honor of the 50th anniversary of Earth Day and the 20th anniversary of NASAs Earth observatory, the agency asked the public to vote on the best images of Earth.\r\nAter a five-round tournament and more than 50,000 votes, the readers have chosen their favorit… [+1549 chars]"
     }
   ],
-  "comments": [
-    {
-      "id": 2,
-      "newsId": 3,
-      "comm": "Oh, yes!"
-    },
-    {
-      "user": "Alexandru Oprescu",
-      "newsId": "2",
-      "comm": "A really good article",
-      "id": 3
-    },
-    {
-      "user": "Johnny English",
-      "newsId": "2",
-      "comm": "I don't think so",
-      "id": 5
-    }
-  ]
+  "comments": []
 }

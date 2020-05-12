@@ -4,10 +4,10 @@ import qs from 'qs';
 import '../styles/AddNews.css';
 
 const errorMessage = {
-    'title': 'You must enter the title!',
-    'description': 'You must enter the description!',
+    'title': 'Please enter the title!',
+    'description': 'Please enter the description!',
     'urlToImage': 'Your article must have an image!',
-    'content': 'You must enter the content!',
+    'content': 'This field can\'t be empty!',
 }
 
 function AddNews() {

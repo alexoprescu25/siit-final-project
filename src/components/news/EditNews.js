@@ -84,7 +84,6 @@ function EditNews() {
                             name="urlToImage"
                             className="edit-form-image"
                     />
-                    <p className="content"> { news.content } </p>
                     <textarea
                             onChange={ handleInputChange }
                             value={ news.content }

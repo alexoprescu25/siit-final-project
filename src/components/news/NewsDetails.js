@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
 import qs from 'qs';
+import Modal from 'react-modal';
 
 import AuthContext from '../auth/AuthContext';
 import '../styles/NewsDetails.css';
@@ -37,7 +38,6 @@ function NewsDetails() {
             
             setNews(stiri);
             setComments(comms);
-            console.log(comms);
 
         } catch(e) {
             console.log(e);
@@ -55,6 +55,7 @@ function NewsDetails() {
             const res = await axios('http://localhost:3002/news/' + newsId, {
                 method: 'DELETE'
             });
+            setTimeout(window.history.back(), 400);
         } catch(e) {
             console.log(e);
         }
@@ -74,20 +75,39 @@ function NewsDetails() {
         }
     }
 
-    function editComment(e) {
-        
-    } 
-
     function deleteComment(e) {
         axios(`http://localhost:3002/comments/${e.currentTarget.id}`, {
             method: 'DELETE'
-        });    
+        });
+        setTimeout(window.location.reload(), 400);    
     }
 
+    const [modalIsOpen, setIsOpen] = useState(false);
+    
+    function openModal() {
+        setIsOpen(true);
+    }
+
+    function closeModal() {
+        setIsOpen(false);
+    }
 
     if(news) {
     return (
         <>
+
+            <Modal
+                isOpen={ modalIsOpen }
+                onRequestClose={ closeModal }
+                className="modal"
+            >
+                <h3>Are you sure you want to delete this article?</h3>
+                <div className="modal-buttons">
+                    <button onClick={ closeModal } className="simple-button"> Cancel </button>
+                    <button onClick={ handleDelete } className="delete-button"> Delete </button>
+                </div>
+            </Modal>
+
         <div className="details">
             <div className="news-details">
                 <div>
@@ -109,26 +129,28 @@ function NewsDetails() {
                     <p className="content"> { news.content } </p>
                     {   token ?
                         <div className="del-itm">
-                            <button className="delete-button" onClick={ handleDelete }>Delete</button>
+                            <button className="delete-button" onClick={ openModal }>Delete</button>
                         </div> : null
                     }
                 </div>
-                <div>
+                { token ?
+                    <div>
                         <form onSubmit={ handleSubmit } className="com-input">
-                        <input
-                            onChange={ handleInputChange }
-                            value={ formData['add-new-comment'] }
-                            name="add-new-comment"
-                            id="comm"
-                            className="add-new-comment"
-                            placeholder="Add Comment"
-                        />
-                        <button className="add-button" type="submit">Post</button>
-                    </form>
-                </div>
+                            <input
+                                onChange={ handleInputChange }
+                                value={ formData['add-new-comment'] }
+                                name="add-new-comment"
+                                id="comm"
+                                className="add-new-comment"
+                                placeholder="Add Comment"
+                            />
+                            <button className="add-button" type="submit">Post</button>
+                        </form>
+                    </div> : null
+                }
                 <div>
                     { comments.length ? comments.map(comentariu => (
-                        <div className="comments"> 
+                        <div className="comments" key={ comentariu.id }> 
                             <p className="com-user"> { comentariu.user } </p>
                             <p className="context"> { comentariu.comm } </p>
                             <div className="com-buttons">
@@ -137,7 +159,7 @@ function NewsDetails() {
                                         <path d="M15.502 1.94a.5.5 0 010 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 01.707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 00-.121.196l-.805 2.414a.25.25 0 00.316.316l2.414-.805a.5.5 0 00.196-.12l6.813-6.814z"/>
                                         <path d="M1 13.5A1.5 1.5 0 002.5 15h11a1.5 1.5 0 001.5-1.5v-6a.5.5 0 00-1 0v6a.5.5 0 01-.5.5h-11a.5.5 0 01-.5-.5v-11a.5.5 0 01.5-.5H9a.5.5 0 000-1H2.5A1.5 1.5 0 001 2.5v11z"/>
                                     </svg>
-                                    <button className="but" id={ comentariu.id } onClick={ editComment }>Edit</button>
+                                    <Link className="edit-link" to={`/comments/editcomment/${comentariu.id}`} >Edit</Link>
                                 </div>
                                 <div className="edit-elements">
                                     <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

@@ -25,8 +25,8 @@ function CovidDates() {
     }
 
     async function getGlobal() {
-        const res = await axios('https://api.covid19api.com/summary');
-        setGlobalCovid(res.data.Global);
+        const res = await axios('https://corona-virus-stats.herokuapp.com/api/v1/cases/general-stats');
+        setGlobalCovid(res.data.data);
     }
 
     useEffect(() => {
@@ -50,7 +50,7 @@ function CovidDates() {
                 <th className="confirmed">Total confirmed</th>
             </tr>
             <tr>
-                <th className="number"> { globalCovid ? globalCovid.TotalConfirmed : null } </th>
+                <th className="number"> { globalCovid ? globalCovid['total_cases'] : null } </th>
                 <th className="number"> { covid ? covid.Confirmed : null } </th>
             </tr>
             <tr>
@@ -58,7 +58,7 @@ function CovidDates() {
                 <th className="deaths">Total deaths</th>
             </tr>
             <tr>
-                <th className="number"> { globalCovid ? globalCovid.TotalDeaths : null } </th>
+                <th className="number"> { globalCovid ? globalCovid['death_cases'] : null } </th>
                 <th className="number"> { covid ? covid.Deaths : null } </th>
             </tr>
         </tbody>

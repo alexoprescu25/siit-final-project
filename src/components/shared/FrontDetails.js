@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom';
 function FrontDetails() {
 
     function handleExit() {
-        document.querySelector('.page-content').classList.add('hidden');
+        document.getElementById("page-content").style.width = "0px";
     }
 
     return (
         <>
-        <nav className="page-content hidden">
-            <div className="page-style">
+        <nav className="page-content">
+            <div className="page-style" id="page-content">
                 <div className="exit-path">
                     <button className="exit-button sidebar-link" onClick={ handleExit }>
                     <svg className="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

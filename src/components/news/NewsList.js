@@ -41,7 +41,7 @@ function NewsList({ category }) {
                     <Sidebar />
                 </div>
             </div>
-            <Pagination postsPerPage={postsPerPage} totalPosts={news.length} paginate={paginate} />
+            <Pagination postsPerPage={ postsPerPage } totalPosts={ news.length } paginate={ paginate } />
         </>
     );
 }

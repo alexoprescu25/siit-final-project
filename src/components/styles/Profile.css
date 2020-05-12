@@ -1,6 +1,9 @@
 .profile-container {
-    display: flex;
-    justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
 }
 
 .profile-details {
@@ -27,4 +30,85 @@
     width: 140px;
     height: 120px;
     border-radius: 50%;
+    border: 2px solid black;
+}
+
+.delete-account-button {
+    border: none;
+    background-color: rgb(226, 88, 78);
+    color: rgb(251, 233, 231);
+    padding: 8px 20px;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+.delete-account-button:hover {
+    background-color: rgb(185, 46, 36);
+    transition-duration: 0.4s;
+}
+
+.informations {
+    display: flex;
+    align-content: center;
+    margin: 2px;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.reset-form {
+    height: 0;
+    overflow-y: hidden;
+    transition: 0.6s;
+}
+
+.reset-password {
+    display: flex;
+    flex-direction: column;
+}
+
+.reset-password input {
+    width: 200px;
+    height: 30px;
+    margin: 4px;
+    border: none;
+    border-bottom: 1px solid rgb(175, 175, 175);
+}
+
+.reset-button {
+    width: 100px;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: rgb(0, 17, 255);
+    color: white;
+    align-self: flex-end;
+}
+
+.reset-button:hover {
+    background-color: rgb(1, 1, 161);
+    transition-duration: 0.6s;
+}
+
+.display-reset-inputs {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 6px;
+    padding-top: 6px;
+    border-top: 1px solid rgb(150, 150, 150);
+}
+
+.display-reset-inputs:hover {
+    color: rgb(95, 95, 228);
+    transition-duration: 0.4s;
+}
+
+@media screen and (min-width: 500px) {
+    .profile-container {
+        width: 400px;
+    }
 }
