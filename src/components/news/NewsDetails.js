@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useHistory } from 'react-router-dom';
 import axios from 'axios';
 import qs from 'qs';
 import Modal from 'react-modal';
@@ -14,7 +14,8 @@ function NewsDetails() {
     const [comments, setComments] = useState([]);
     const { token } = useContext(AuthContext);
     const fullname = localStorage.getItem('fullname');
-
+    const history = useHistory();
+    
     const [formData, setFormData] = useState({
         'user': fullname,
         'newsId': newsId,
@@ -69,7 +70,6 @@ function NewsDetails() {
                 method: 'POST',
                 data: qs.stringify(formData)
             });
-            setTimeout(window.location.reload(), 400);
         } catch(e) {
             console.log(e);
         }
@@ -79,7 +79,6 @@ function NewsDetails() {
         axios(`http://localhost:3002/comments/${e.currentTarget.id}`, {
             method: 'DELETE'
         });
-        setTimeout(window.location.reload(), 400);    
     }
 
     const [modalIsOpen, setIsOpen] = useState(false);

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import  '../styles/Register.css';
 import axios from 'axios';
 import qs from 'qs';
@@ -42,6 +43,7 @@ function Register() {
     const [globalErrorMessage, setErrorMessage] = useState('');
     const [globalSuccessMessage, setSuccessMessage] = useState('');
     const [isDirty, setDirty] = useState(false);
+    const history = useHistory();
 
     async function handleSubmit(e) {
         e.preventDefault();
@@ -55,7 +57,7 @@ function Register() {
                     data: qs.stringify(formData),
                 });
                 setSuccessMessage('Your username was created!');
-                setTimeout( () => { window.location.assign("/login") }, 1000 );
+                setTimeout( () => { history.push('/login'); }, 1000 );
             } catch(e) {
                 console.log(e);
                 setErrorMessage('Your username was not created!');

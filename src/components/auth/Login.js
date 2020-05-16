@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import '../styles/Login.css';
 import axios from 'axios';
 
@@ -21,6 +21,8 @@ function Login() {
         'username': '',
         'password': ''
     });
+
+    const history = useHistory();
 
     const { setToken } = useContext(AuthContext);
 
@@ -45,7 +47,7 @@ function Login() {
                         localStorage.setItem('fullname', db[i]['firstname'] + ' ' + db[i]['lastname']);
                         localStorage.setItem('firstname', db[i]['firstname']);
                         setTimeout(() => {
-                            window.location.assign("/home");
+                            history.push('/home');
                         }, 1000);
                     }
                 }
